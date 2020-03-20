@@ -1,0 +1,8 @@
+.vscode/
+
+data/
+out/
+
+*.pyc
+*.json
+*.bkp
