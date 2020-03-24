@@ -16,8 +16,13 @@ def main():
 
 
 def download_file(download_url):
-    response = urllib.request.urlopen(download_url)
     fname = os.path.split(download_url)[1]
+    try:
+        response = urllib.request.urlopen(download_url)
+    except urllib.request.HTTPError as e:
+        print(f"Failed to write {fname}:")
+        print(e)
+        return
     f = open(os.path.join(PDF_PATH, fname), 'wb')
     f.write(response.read())
     f.close()
