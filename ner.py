@@ -107,6 +107,11 @@ def extract_affiliations(txt_path, metadata, predictor):
     return affiliations
 
 
+def write_output(output):
+    with open('./out/affiliations.json', 'w') as f:
+        json.dump(output, f, indent=4)
+
+
 def main():
     fname = './out/code_stat.json'
     with open(fname, 'r') as f:
@@ -116,7 +121,7 @@ def main():
 
     output = list()
     base_path = './data/neurips_2019/txt'
-    for metadata in metadatas:
+    for i, metadata in enumerate(metadatas):
         pdf_fname = os.path.split(metadata['pdf'])[1]
         txt_fname = pdf_fname.replace('.pdf', '.txt')
         txt_path = os.path.join(base_path, txt_fname)
@@ -124,9 +129,10 @@ def main():
         has_code = metadata['code']
         data = dict(code=has_code, affiliations=affiliations)
         output.append(data)
-    
-    with open('./out/affiliations.json', 'w') as f:
-        json.dump(output, f, indent=4)
+        if i % 100 == 0:
+            # Write periodically as a failsafe
+            write_output(output)
+    write_output(output)
 
 
 if __name__ == '__main__':
