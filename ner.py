@@ -29,6 +29,8 @@ def preprocess_header(lines):
         match = re.match(number_pattern, line)
         if match:
             new_lines[i] = line.replace(line[match.start()], '')
+    # Strip lines in case only whitespace remains
+    new_lines = [line.strip() for line in new_lines]
     return new_lines
 
 
@@ -117,15 +119,21 @@ def main():
     with open(fname, 'r') as f:
         metadatas = json.load(f)
 
+    print('Building model...')
     predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
 
     output = list()
     base_path = './data/neurips_2019/txt'
+    ignore = ['9724'] # PDF not found
     for i, metadata in enumerate(metadatas):
         pdf_fname = os.path.split(metadata['pdf'])[1]
+        if any([ig in pdf_fname for ig in ignore]):
+            continue
         txt_fname = pdf_fname.replace('.pdf', '.txt')
         txt_path = os.path.join(base_path, txt_fname)
+
         affiliations = extract_affiliations(txt_path, metadata, predictor)
+
         has_code = metadata['code']
         data = {
             'name': pdf_fname.replace('.pdf', ''),
@@ -133,9 +141,11 @@ def main():
             'affiliations': affiliations
         }
         output.append(data)
+
         if i % 100 == 0:
             # Write periodically as a failsafe
             write_output(output)
+
     write_output(output)
 
 
