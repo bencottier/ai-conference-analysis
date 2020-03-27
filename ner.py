@@ -75,7 +75,7 @@ def is_valid_entity(entity, metadata, threshold=0.25):
     return True
 
 
-def extract_affiliations(txt_path, metadata):
+def extract_affiliations(txt_path, metadata, predictor):
     with open(txt_path, 'r') as f:
         i = 0
         header_lines = list()
@@ -91,7 +91,6 @@ def extract_affiliations(txt_path, metadata):
     print("")
     pprint(header_lines)
 
-    predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
     results = []
     for line in header_lines:
         if len(line) < 1:
@@ -113,13 +112,15 @@ def main():
     with open(fname, 'r') as f:
         metadatas = json.load(f)
 
+    predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
+
     output = list()
     base_path = './data/neurips_2019/txt'
     for metadata in metadatas:
         pdf_fname = os.path.split(metadata['pdf'])[1]
         txt_fname = pdf_fname.replace('.pdf', '.txt')
         txt_path = os.path.join(base_path, txt_fname)
-        affiliations = extract_affiliations(txt_path, metadata)
+        affiliations = extract_affiliations(txt_path, metadata, predictor)
         has_code = metadata['code']
         data = dict(code=has_code, affiliations=affiliations)
         output.append(data)
