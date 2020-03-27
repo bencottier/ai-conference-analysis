@@ -127,7 +127,11 @@ def main():
         txt_path = os.path.join(base_path, txt_fname)
         affiliations = extract_affiliations(txt_path, metadata, predictor)
         has_code = metadata['code']
-        data = dict(code=has_code, affiliations=affiliations)
+        data = {
+            'name': pdf_fname.replace('.pdf', ''),
+            'code': has_code,
+            'affiliations': affiliations
+        }
         output.append(data)
         if i % 100 == 0:
             # Write periodically as a failsafe
