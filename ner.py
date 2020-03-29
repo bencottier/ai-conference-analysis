@@ -65,15 +65,19 @@ def postprocess_entities(results, metadata):
 
 def is_valid_entity(entity, metadata, threshold=0.25):
     clean_entity = ''.join(c for c in entity if not c.isdigit())
+    # Check if entity is an email address
+    if '@' in entity and '.' in entity:
+        return False
     # Check if entity is actually a person (author from metadata)
     for author in metadata['authors']:
         dist = edit_distance(clean_entity, author)
         if (dist / len(author)) < threshold:
             # Close enough to be an author, therefore not affiliation
             return False
-    if any([x in entity.lower() for x in ['school', 'department']]):
-        # Don't care about university schools and departments
-        return False
+    # Ignore university schools and departments
+    # NOTE this is imperfect: there is 'college', 'laboratory', etc.
+    # if any([x in entity.lower() for x in ['school', 'department']]):
+    #     return False
     return True
 
 
