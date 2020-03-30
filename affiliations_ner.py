@@ -7,13 +7,14 @@ from pprint import pprint
 import os
 
 
-# EN_MODEL = spacy.load('en_core_web_sm')
-# PATH = './data/neurips_2019/txt/8317-imitation-learning-from-observations-by-minimizing-inverse-dynamics-disagreement.txt'
-# PATH = 'data/neurips_2019/txt/9668-robust-exploration-in-linear-quadratic-reinforcement-learning.txt'
-# PATH = 'data/neurips_2019/txt/9715-generalization-in-multitask-deep-neural-classifiers-a-statistical-physics-approach.txt'
-# PATH = 'data/neurips_2019/txt/9721-re-randomized-densification-for-one-permutation-hashing-and-bin-wise-consistent-weighted-sampling.txt'
-# PATH = 'data/neurips_2019/txt/9723-mixtape-breaking-the-softmax-bottleneck-efficiently.txt'
-# PATH = 'data/neurips_2019/txt/9704-on-the-transfer-of-inductive-bias-from-simulation-to-the-real-world-a-new-disentanglement-dataset.txt'
+UNICODE_CONVERSION = {
+    '\u0133': 'ij',
+    '\ufb00': 'ff',
+    '\ufb01': 'fi',
+    '\ufb02': 'fl',
+    '\ufb03': 'ffi',
+    '\ufb04': 'ffl',
+}
 
 
 def preprocess_header(lines):
@@ -21,14 +22,21 @@ def preprocess_header(lines):
     # Remove symbols
     for i, line in enumerate(new_lines):
         for char in line:
-            if not (char.isalnum() or char.isascii()):
+            if UNICODE_CONVERSION.get(char) is not None:
+                new_lines[i] = new_lines[i].replace(char, 
+                    UNICODE_CONVERSION[char])
+            elif not (char.isalnum() or char.isascii()):
                 new_lines[i] = new_lines[i].replace(char, '')
     # Remove numbers at the start of words (footnotes)
     for i, line in enumerate(new_lines):
-        number_pattern = re.compile('[0-9] ?[A-Za-z]')
-        match = re.match(number_pattern, line)
-        if match:
-            new_lines[i] = line.replace(line[match.start()], '')
+        number_pattern = re.compile('[0-9][A-Za-z]')
+        removed = 0
+        for match in re.finditer(number_pattern, line):
+            new_line = new_lines[i]
+            new_line = new_line[:match.start() - removed] + \
+                new_line[match.start() - removed + 1:]
+            removed += 1
+            new_lines[i] = new_line
     # Strip lines in case only whitespace remains
     new_lines = [line.strip() for line in new_lines]
     return new_lines
