@@ -1,5 +1,6 @@
 import spacy
 from nltk.metrics.distance import edit_distance
+from string_sim import cos_sim_pair
 from allennlp import pretrained
 import re
 import json
@@ -15,6 +16,14 @@ UNICODE_CONVERSION = {
     '\ufb03': 'ffi',
     '\ufb04': 'ffl',
 }
+
+
+def is_valid_line(line, index=None, invalid_indices=list()):
+    if len(line) < 1:
+        return False
+    elif len(invalid_indices) > 0 and index in invalid_indices:
+        return False
+    return True
 
 
 def preprocess_header(lines):
@@ -94,25 +103,31 @@ def extract_affiliations(txt_path, metadata, predictor):
         i = 0
         header_lines = list()
         for line in f.readlines():
-            if 'Abstract' in line:
+            # NOTE assumption: affiliations listed above abstract
+            if 'Abstract\n' in line:
                 break
             else:
-                header_lines.append(line.strip())
+                line = line.strip()
+                if is_valid_line(line):
+                    header_lines.append(line)
             i += 1
     
-    pprint(header_lines)
+    # pprint(header_lines)
     header_lines = preprocess_header(header_lines)
-    print("")
-    pprint(header_lines)
+    # print("")
+    # pprint(header_lines)
+
+    title_indices = find_title(header_lines, metadata['title'])
+    # print(title_indices)
 
     results = []
-    for line in header_lines:
-        if len(line) < 1:
+    for i, line in enumerate(header_lines):
+        if not is_valid_line(line, index=i, invalid_indices=title_indices):
             continue
         result = predictor.predict(sentence=line)
-        for word, tag in zip(result["words"], result["tags"]):
-            print(f"({tag}) {word}", end=" ")
-        print("")
+        # for word, tag in zip(result["words"], result["tags"]):
+        #     print(f"({tag}) {word}", end=" ")
+        # print("")
         results.append(result)
     
     affiliations = postprocess_entities(results, metadata)
@@ -121,8 +136,31 @@ def extract_affiliations(txt_path, metadata, predictor):
     return affiliations
 
 
-def write_output(output):
-    with open('./out/affiliations.json', 'w') as f:
+def find_title(header_lines, title):
+    title_indices = list()
+    title_started = False
+    cum_sim = 0.0
+    cum_line = str()
+    title_ = title.strip().lower()
+    for i, line in enumerate(header_lines):
+        line_ = line.strip().lower()
+        sim = cos_sim_pair(title_, line_)
+        if not title_started and sim > 0.2:
+            title_started = True
+            cum_sim = sim
+            cum_line = line_
+            title_indices.append(i)
+        elif title_started:
+            combined = ' '.join([cum_line, line_])
+            combined_sim = cos_sim_pair(title_, combined)
+            if combined_sim > cum_sim:
+                # Similarity increased by appending this line
+                # Therefore, likely continuation of title
+                cum_sim = combined_sim
+                cum_line = combined
+                title_indices.append(i)
+    assert len(title_indices) != 0
+    return title_indices
         json.dump(output, f, indent=4)
 
 
