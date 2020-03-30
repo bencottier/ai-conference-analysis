@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-PDF_DIR='./data/neurips_2019/pdf'
-TXT_DIR='./data/neurips_2019/txt'
+PDF_DIR=$1
 
 for FILE in "$PDF_DIR"/*
 do

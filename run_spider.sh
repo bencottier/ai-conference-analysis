@@ -1,4 +1,7 @@
 #!/usr/bin/bash
 
-rm ./code_stat.json
-scrapy runspider code_stat.py -o code_stat.json
+SPIDER_FILE=$1
+OUT_FILE=$2
+
+rm -i ${OUT_FILE}
+scrapy runspider ${SPIDER_FILE} -o ${OUT_FILE}
