@@ -18,14 +18,20 @@ class NeurIPS2019PapersSpider(scrapy.Spider):
     def parse(self, response):
         title = response.css('title::text').get()
         if '2019 proceedings' in title.lower():
+            # Page is the list of all papers
             for paper in response.xpath('body/div/div/ul/li'):
                 self.n_papers += 1
+
+                # For small-scale testing
+                # if self.n_papers > 50:
+                #     break
 
                 next_page = paper.css('a::attr(href)').get()
                 if next_page is not None:
                     next_page = response.urljoin(next_page)
                     yield scrapy.Request(next_page, callback=self.parse)
         else:
+            # Page is for one paper
             for item in response.xpath('body/div/div/a'):
                 item_text = item.css('a::text').get()
                 if '[PDF]' in item_text:
