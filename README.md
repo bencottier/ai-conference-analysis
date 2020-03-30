@@ -1,4 +1,4 @@
-# ML conference analysis
+# AI conference analysis
 
 This repository is for analysing code release trends from NeurIPS 2019.
 
