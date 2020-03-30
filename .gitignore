@@ -1,8 +1,13 @@
 .vscode/
 
-data/
-out/
-
 *.pyc
 *.json
 *.bkp
+
+data/*
+out/*
+!out/neurips_2019
+out/neurips_2019/*
+!out/neurips_2019/code_rankings.txt
+!out/neurips_2019/affiliations.json
+!out/neurips_2019/papers_metadata.json
