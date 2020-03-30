@@ -6,6 +6,7 @@ import re
 import json
 from pprint import pprint
 import os
+import argparse
 
 
 UNICODE_CONVERSION = {
@@ -161,26 +162,42 @@ def find_title(header_lines, title):
                 title_indices.append(i)
     assert len(title_indices) != 0
     return title_indices
+
+
+def write_output(fname, output):
+    with open(fname, 'w') as f:
         json.dump(output, f, indent=4)
 
 
-def main():
-    fname = './out/code_stat.json'
+def main(args):
+    fname = args.metadata
     with open(fname, 'r') as f:
         metadatas = json.load(f)
 
     print('Building model...')
     predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
+    
+    # Ignore problematic files
+    ignore = [
+        '9724',  # PDF not available on website
+        '9659', '9165', '8511', '9485', '9430', '9393', '9341', '9245', 
+        '9166', '8858', '8687', '8574', '8518',  # no whitespace
+        '9305', '9171',  # Each page is an image
+        '8823',  # NeurIPS template PDF (probably mistaken)
+        '8646',  # Supplementary material (probably mistaken)
+    ]
 
     output = list()
-    base_path = './data/neurips_2019/txt'
-    ignore = ['9724'] # PDF not found
+    data_path = args.data
+
     for i, metadata in enumerate(metadatas):
         pdf_fname = os.path.split(metadata['pdf'])[1]
         if any([ig in pdf_fname for ig in ignore]):
             continue
         txt_fname = pdf_fname.replace('.pdf', '.txt')
-        txt_path = os.path.join(base_path, txt_fname)
+        txt_path = os.path.join(data_path, txt_fname)
+        paper_id = pdf_fname.split('-')[0]
+        print(paper_id)
 
         affiliations = extract_affiliations(txt_path, metadata, predictor)
 
@@ -194,10 +211,25 @@ def main():
 
         if i % 100 == 0:
             # Write periodically as a failsafe
-            write_output(output)
+            write_output(args.output, output)
 
-    write_output(output)
+    write_output(args.output, output)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-m', '--metadata', type=str, 
+                        default='./out/neurips_2019/papers_metadata.json',
+                        help='Path to metadata JSON file with PDF URLs')
+    parser.add_argument('-d', '--data', type=str, 
+                        default='./data/neurips_2019/txt',
+                        help='Folder containing papers in text format')
+    parser.add_argument('-o', '--output', type=str, 
+                        default='./out/neurips_2019/affiliations.json', 
+                        help='File to write affiliation data')
+    return parser.parse_args()
 
 
 if __name__ == '__main__':
-    main()
+    args = parse_args()
+    main(args)

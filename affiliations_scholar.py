@@ -41,7 +41,7 @@ def get_pub_info(pub):
 
 
 def main():
-    fname = './code_stat.json'
+    fname = './out/neurips_2019/papers_metadata.json'
     with open(fname, 'r') as f:
         data = json.load(f)
     
