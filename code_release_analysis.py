@@ -4,7 +4,7 @@ import argparse
 
 
 IGNORE_PART = ['department', 'school']
-IGNORE_FULL = ['AI']
+IGNORE_FULL = ['AI', 'arXiv']
 STOPWORDS = [
     'the', 'de', ',', 
     'artificial', 'intelligence', 'automation'
@@ -69,7 +69,8 @@ def rank_code_release_frequency_per_entity(data, top=10, min_count=0, **kwargs):
     code_freq, no_code_freq = frequency_per_code_release(data, **kwargs)
     rel_freq = compute_relative_code_release_frequency(code_freq, no_code_freq, min_count)
     print("\nLowest fraction of papers with code\n")
-    print_ranked_freq(rel_freq, top=top, reverse=False)
+    sort_key_low = lambda k: (k[1][0], -k[1][1])
+    print_ranked_freq(rel_freq, top=top, reverse=False, sort_key=sort_key_low)
     print("\nHighest fraction of papers with code\n")
     print_ranked_freq(rel_freq, top=top, reverse=True)
 
