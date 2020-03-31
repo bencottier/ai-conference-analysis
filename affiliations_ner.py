@@ -9,6 +9,18 @@ import os
 import argparse
 
 
+# Ignore problematic files
+IGNORE = {
+    '9724',  # PDF not available on website
+    '9659', '9165', '8511', '9485', '9430', '9393', '9341', '9245', 
+    '9166', '8858', '8687', '8574', '8518',  # no whitespace
+    '9305', '9171',  # Each page is an image
+    '8823',  # NeurIPS template PDF (probably mistaken)
+    '8646',  # Supplementary material (probably mistaken)
+}
+# For debugging: ignore everything except these files
+KEEP = set()
+
 UNICODE_CONVERSION = {
     '\u0133': 'ij',
     '\ufb00': 'ff',
@@ -17,12 +29,14 @@ UNICODE_CONVERSION = {
     '\ufb03': 'ffi',
     '\ufb04': 'ffl',
 }
+
 REGEX_PATTERNS = {
     'number': re.compile('[0-9][A-Za-z]'),
     'all-caps': re.compile('[A-Z][A-Z]+'),
     'camel-caps': re.compile('[A-Z]+[a-z]+[A-Z]+'),
     'footer-affiliation': re.compile('^([^\x00-\x7F]|[0-9]|[0-9]:? )[A-Za-z]+'),
 }
+
 CONFERENCE_SIGN = '33rd Conference'
 PER_EXCEPTIONS = ['Mila', 'Deepmind', 'Stanford']
 LOC_EXCEPTIONS = ['Amazon']
@@ -246,19 +260,6 @@ def main(args):
 
     print('Building model...')
     predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
-    
-    # Ignore problematic files
-    ignore = {
-        '9724',  # PDF not available on website
-        '9659', '9165', '8511', '9485', '9430', '9393', '9341', '9245', 
-        '9166', '8858', '8687', '8574', '8518',  # no whitespace
-        '9305', '9171',  # Each page is an image
-        '8823',  # NeurIPS template PDF (probably mistaken)
-        '8646',  # Supplementary material (probably mistaken)
-    }
-
-    # For debugging: ignore everything except these files
-    keep = set()
 
     output = list()
     data_path = args.data
@@ -267,10 +268,10 @@ def main(args):
         pdf_fname = os.path.split(metadata['pdf'])[1]
 
         paper_id = pdf_fname.split('-')[0]
-        if len(keep) > 0 and paper_id not in keep:
+        if len(KEEP) > 0 and paper_id not in KEEP:
             continue
         print(paper_id)
-        if paper_id in ignore:
+        if paper_id in IGNORE:
             print('Ignored')
             continue
         
