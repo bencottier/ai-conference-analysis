@@ -4,26 +4,36 @@ Code release fraction
 
 Format: rank. name (fraction, #papers)
 
-All institutions
-================
+Institutions
+============
 
 Lowest fraction of papers with code
 
 1. Cognitive Computing Lab (0.17, 6)
 2. California Institute of Technology (0.2, 5)
-3. NEC Corporation (0.25, 4)
-4. The University of Tokyo (0.25, 4)
-5. Google Inc. (0.25, 4)
-6. University of Minnesota (0.25, 12)
-7. Baidu Research (0.29, 7)
-8. Intel AI Lab (0.33, 3)
-9. Universitat Pompeu Fabra (0.33, 3)
-10. University at Buffalo (0.33, 3)
+3. SWS (0.25, 4)
+4. University of Waterloo (0.25, 4)
+5. NEC Corporation (0.25, 4)
+6. Google Inc. (0.25, 4)
+7. University of Minnesota (0.25, 12)
+8. Baidu Research (0.29, 7)
+9. Intel AI Lab (0.33, 3)
+10. Universitat Pompeu Fabra (0.33, 3)
+11. Deepmind (0.33, 3)
+12. University at Buffalo (0.33, 3)
+13. CASIA (0.33, 3)
+14. INRIA Lille (0.33, 3)
+15. Strategy Robot , Inc. (0.33, 3)
+16. Optimized Markets , Inc. (0.33, 3)
+17. arXiv (0.33, 3)
+18. Strategic Machine , Inc. (0.33, 3)
+19. Keio University (0.33, 3)
+20. Big Data (0.33, 3)
 
 Highest fraction of papers with code
 
 1. University College London (1.0, 16)
-2. University of Amsterdam (1.0, 11)
+2. University of Amsterdam (1.0, 12)
 3. PSL Research University (1.0, 10)
 4. Texas A&M University (1.0, 9)
 5. Université Paris (1.0, 9)
@@ -32,64 +42,88 @@ Highest fraction of papers with code
 8. Aalto University (1.0, 8)
 9. University of Tokyo (1.0, 8)
 10. National University of Singapore (1.0, 7)
+11. Fudan University (1.0, 7)
+12. Hong Kong University of Science and Technology (1.0, 7)
+13. LTCI (1.0, 6)
+14. NVIDIA (1.0, 6)
+15. Beijing National Research Center for Information Science and Technology (1.0, 6)
+16. BNRist (1.0, 6)
+17. MIT CSAIL (1.0, 6)
+18. CIFAR (1.0, 6)
+19. Advanced Intelligence Project (1.0, 6)
+20. RIKEN Center (1.0, 6)
 
-Institutions with at least 10 papers
-====================================
+Words
+=====
 
 Lowest fraction of papers with code
 
-1. University of Minnesota (0.25, 12)
-2. IBM Research (0.39, 18)
-3. Princeton University (0.44, 32)
-4. Massachusetts Institute of Technology (0.48, 23)
-5. Google (0.5, 12)
-6. Duke University (0.55, 22)
-7. University of Pennsylvania (0.59, 17)
-8. Google Research (0.6, 52)
-9. Rutgers University (0.62, 13)
-10. University of Wisconsin (0.62, 16)
+1. Minnesota (0.25, 12)
+2. Copenhagen (0.33, 6)
+3. Simons (0.38, 8)
+4. Aviv (0.43, 7)
+5. Hebrew (0.43, 7)
+6. Toyota (0.44, 9)
+7. Northwestern (0.44, 9)
+8. Boston (0.44, 9)
+9. Baidu (0.44, 9)
+10. Princeton (0.45, 42)
+11. UIUC (0.5, 6)
+12. Tel (0.5, 6)
+13. Theory (0.5, 6)
+14. NTT (0.5, 6)
+15. Study (0.5, 8)
+16. Purdue (0.5, 10)
+17. Duke (0.55, 22)
+18. Massachusetts (0.55, 33)
+19. AIP (0.56, 9)
+20. MPI (0.57, 7)
 
 Highest fraction of papers with code
 
-1. University College London (1.0, 16)
-2. University of Amsterdam (1.0, 11)
-3. University of Cambridge (0.95, 22)
-4. University of Oxford (0.94, 34)
-5. Alan Turing Institute (0.94, 16)
-6. CNRS (0.93, 28)
-7. Brain Team (0.92, 13)
-8. Vector Institute (0.92, 13)
-9. INRIA (0.92, 13)
-10. Tencent AI Lab (0.92, 12)
+1. Kong (1.0, 17)
+2. Hong (1.0, 17)
+3. Neuroscience (1.0, 16)
+4. Beijing (1.0, 13)
+5. Bosch (1.0, 12)
+6. Amsterdam (1.0, 12)
+7. Applied (1.0, 10)
+8. Vision (1.0, 10)
+9. Uber (1.0, 10)
+10. Imperial (1.0, 10)
+11. Physics (1.0, 9)
+12. BNRist (1.0, 9)
+13. A&M (1.0, 9)
+14. Aalto (1.0, 9)
+15. Shanghai (1.0, 9)
+16. British (1.0, 9)
+17. NVIDIA (1.0, 8)
+18. Montréal (1.0, 8)
+19. Project (1.0, 8)
+20. Virginia (1.0, 7)
 
-============================
-Most papers per code release
-============================
+Biggest publishers
+==================
 
-Format: rank. name #papers
+Code release fraction for biggest publishers
 
-Papers with code
-
-1. Stanford University 58
-2. Carnegie Mellon University 55
-3. University of California 43
-4. Microsoft Research 34
-5. MIT 33
-6. University of Oxford 32
-7. Google Research 31
-8. Columbia University 30
-9. CNRS 26
-10. Facebook AI Research 26
-
-Papers without code
-
-1. Google Research 21
-2. Carnegie Mellon University 20
-3. University of California 18
-4. Princeton University 18
-5. Stanford University 14
-6. Massachusetts Institute of Technology 12
-7. IBM Research 11
-8. Columbia University 11
-9. Google Brain 10
-10. Duke University 10
+1. Carnegie Mellon University (0.72, 76)
+2. Stanford University (0.81, 74)
+3. University of California (0.69, 62)
+4. Google Research (0.58, 55)
+5. Microsoft Research (0.76, 46)
+6. MIT (0.8, 44)
+7. Columbia University (0.73, 41)
+8. Princeton University (0.44, 39)
+9. Facebook AI Research (0.76, 37)
+10. Tsinghua University (0.75, 36)
+11. University of Oxford (0.94, 35)
+12. DeepMind (0.59, 34)
+13. Google Brain (0.67, 30)
+14. CNRS (0.93, 30)
+15. University of Illinois (0.75, 28)
+16. Cornell University (0.78, 27)
+17. University of Washington (0.73, 26)
+18. Peking University (0.76, 25)
+19. Georgia Institute of Technology (0.75, 24)
+20. New York University (0.79, 24)
