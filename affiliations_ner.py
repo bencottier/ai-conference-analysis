@@ -35,19 +35,18 @@ def is_valid_line(line, index=None, invalid_indices=list()):
 
 def preprocess_header(lines):
     new_lines = lines
-    # Remove symbols
+    # Separate the symbols
     for i, line in enumerate(new_lines):
-        for char in line:
+        for char in set(line):
             if UNICODE_CONVERSION.get(char) is not None:
                 new_lines[i] = new_lines[i].replace(char, 
                     UNICODE_CONVERSION[char])
             elif not (char.isalnum() or char.isascii()):
-                new_lines[i] = new_lines[i].replace(char, '')
+                new_lines[i] = new_lines[i].replace(char, ' ' + char + ' ')
     # Remove numbers at the start of words (footnotes)
     for i, line in enumerate(new_lines):
-        number_pattern = re.compile('[0-9][A-Za-z]')
         removed = 0
-        for match in re.finditer(number_pattern, line):
+        for match in re.finditer(REGEX_PATTERNS['number'], line):
             new_line = new_lines[i]
             new_line = new_line[:match.start() - removed] + \
                 new_line[match.start() - removed + 1:]
@@ -61,11 +60,19 @@ def preprocess_header(lines):
 def postprocess_entities(results, metadata):
     entities = list()
 
-    def maybe_add_entity(entity):
-        if is_valid_entity(entity, metadata):
+    def clean_entity(entity): 
+        entity = ''.join(filter(lambda c: c.isalnum() or c.isascii(), 
+            entity))
+        if entity[-1].isdigit():
+            entity = entity[:-1]
+        entity = entity.strip()
+        return entity
+
+    def maybe_add_entity(entity, tag=None):
+        if is_valid_entity(entity, metadata, tag=tag):
+            entity = clean_entity(entity)
             entities.append(entity)
 
-    passed_title = False
     for result in results:
         entity = str()
         for word, tag in zip(result["words"], result["tags"]):
