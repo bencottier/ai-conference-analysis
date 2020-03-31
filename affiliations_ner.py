@@ -17,7 +17,6 @@ UNICODE_CONVERSION = {
     '\ufb03': 'ffi',
     '\ufb04': 'ffl',
 }
-PER_EXCEPTIONS = ['Mila', 'Deepmind', 'Stanford']
 REGEX_PATTERNS = {
     'number': re.compile('[0-9][A-Za-z]'),
     'all-caps': re.compile('[A-Z][A-Z]+'),
@@ -25,6 +24,8 @@ REGEX_PATTERNS = {
     'footer-affiliation': re.compile('^([^\x00-\x7F]|[0-9]|[0-9]:? )[A-Za-z]+'),
 }
 CONFERENCE_SIGN = '33rd Conference'
+PER_EXCEPTIONS = ['Mila', 'Deepmind', 'Stanford']
+LOC_EXCEPTIONS = ['Amazon']
 
 
 def is_valid_line(line, index=None, invalid_indices=list()):
@@ -81,6 +82,8 @@ def postprocess_entities(results, metadata):
             if tag == 'U-PER':
                 # Sometimes U-ORG is mistaken for U-PER e.g. DeepMind
                 maybe_add_entity(word, tag=tag)
+            elif tag == 'U-LOC':
+                maybe_add_entity(word, tag=tag)
             elif tag == 'U-ORG':
                 maybe_add_entity(word)
             elif tag == 'B-ORG':
@@ -126,13 +129,20 @@ def is_valid_entity(entity, metadata, threshold=0.25, tag=None):
         else:
             return False
 
+    if tag and tag == 'U-LOC':
+        # Hard-coded exceptions
+        if any([ke in clean_entity for ke in LOC_EXCEPTIONS]):
+            return True
+        else:
+            return False
+
     return True
 
 
 def extract_affiliations(txt_path, metadata, predictor):
-        i = 0
+    i = 0
     lines = list()
-        header_lines = list()
+    header_lines = list()
     post_abstract = False
     sign_idx = -1
     with open(txt_path, 'r') as f:
