@@ -8,9 +8,15 @@ In future, it may extend to other analysis.
 
 ### NeurIPS 2019 code release
 
-The analysis is imperfect. Some papers (104 out of 1428) don't make it all the way through the pipeline due to a missing file, failed text conversion or uncommon formatting. Some text information fails to be extracted correctly or detected at all. At a higher level, the analysis overlooks underlying factors that influence the decision to release code.
+The analysis is imperfect. Some papers (49 out of 1428) don't make it all the way through the pipeline due to a missing file, failed text conversion or uncommon formatting. Some text information fails to be extracted correctly or detected at all. At a higher level, the analysis overlooks underlying factors that influence the decision to release code.
 
-## Installation
+## Usage
+
+## Quick replication 
+
+Run `code_release_analysis.py` to replicate the analysis of NeurIPS 2019 code release. Requires `python >= 3.6`.
+
+## Going deeper
 
 See `environment.yml` for dependencies. The main ones are
 
@@ -21,7 +27,7 @@ See `environment.yml` for dependencies. The main ones are
 - `spacy`
 - `allennlp`
 
-`bash code_release_pipeline.sh` will run the full pipeline necessary to reproduce the analysis of NeurIPS 2019 code release. Getting the data and doing named entity recognition take a long time, so in practice you may want to run the steps separately.
+`bash code_release_pipeline.sh` will run the full pipeline to reproduce the analysis of NeurIPS 2019 code release. Getting the data and doing named entity recognition take a long time, so in practice you may want to run the steps separately.
 
 ## Sample results
 
