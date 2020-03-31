@@ -3,6 +3,14 @@ from collections import defaultdict
 import argparse
 
 
+IGNORE_PART = ['department', 'school']
+IGNORE_FULL = ['AI']
+STOPWORDS = [
+    'the', 'de', ',', 
+    'artificial', 'intelligence', 'automation'
+]
+
+
 def print_ranked_freq(freq, top=10, reverse=True, sort_key=None):
     if sort_key is None:
         sort_key = lambda i: i[1]
@@ -15,48 +23,63 @@ def print_ranked_freq(freq, top=10, reverse=True, sort_key=None):
             break
 
 
-def frequency_per_code_release(data, words=False,
-    ignore=['department', 'school']):
+def frequency_per_code_release(data, words=False):
     code_freq = defaultdict(int)
     no_code_freq = defaultdict(int)
     for item in data:
         code_released = item['code']
         freq = code_freq if code_released else no_code_freq
         affiliations = item['affiliations']
-        # Remove duplicates
-        affiliations = set(affiliations)
-        for aff in affiliations:
-            if any([(ig in aff.lower()) for ig in ignore]):
-                continue
-            if words:
-                for word in aff.split(' '):
-                    freq[word] += 1
-            else:
+        affiliations = [aff for aff in affiliations if not (
+            any([(ig in aff.lower()) for ig in IGNORE_PART]) or 
+            any([aff == ig for ig in IGNORE_FULL]))]
+        if words:
+            aff_words = set((' '.join(affiliations)).split(' '))
+            for word in aff_words:
+                if any([word.lower() == sw for sw in STOPWORDS]):
+                    continue
+                freq[word] += 1
+        else:
+            # Remove duplicates
+            affiliations = set(affiliations)
+            for aff in affiliations:
                 freq[aff] += 1
     return code_freq, no_code_freq
 
 
-def rank_frequency_per_code_release(data, top=10):
-    code_freq, no_code_freq = frequency_per_code_release(data)
+def rank_frequency_per_code_release(data, top=10, **kwargs):
+    code_freq, no_code_freq = frequency_per_code_release(data, **kwargs)
     print("\nPapers with code\n")
     print_ranked_freq(code_freq, top=top)
     print("\nPapers without code\n")
     print_ranked_freq(no_code_freq, top=top)
 
 
-def rank_code_release_frequency_per_entity(data, top=10, min_count=0):
-    code_freq, no_code_freq = frequency_per_code_release(data)
+def compute_relative_code_release_frequency(code_freq, no_code_freq, min_count=0):
     rel_freq = defaultdict(tuple)
     for k, v in code_freq.items():
         v2 = no_code_freq[k]
         v_tot = v + v2
         if v_tot > min_count:
             rel_freq[k] = (round(v / (v_tot), 2), v_tot)
-    # sort_key = lambda i: i[1][0]
+    return rel_freq
+
+
+def rank_code_release_frequency_per_entity(data, top=10, min_count=0, **kwargs):
+    code_freq, no_code_freq = frequency_per_code_release(data, **kwargs)
+    rel_freq = compute_relative_code_release_frequency(code_freq, no_code_freq, min_count)
     print("\nLowest fraction of papers with code\n")
     print_ranked_freq(rel_freq, top=top, reverse=False)
     print("\nHighest fraction of papers with code\n")
     print_ranked_freq(rel_freq, top=top, reverse=True)
+
+
+def rank_pubs_per_code_release(data, top=10, min_count=0, **kwargs):
+    code_freq, no_code_freq = frequency_per_code_release(data, **kwargs)
+    rel_freq = compute_relative_code_release_frequency(code_freq, no_code_freq, min_count)
+    sort_key = lambda i: i[1][1]
+    print("\nCode release fraction for biggest publishers\n")
+    print_ranked_freq(rel_freq, top=top, reverse=True, sort_key=sort_key)
 
 
 def main(args):
@@ -68,19 +91,17 @@ def main(args):
     print('======================\n')
     print('Format: rank. name (fraction, #papers)')
 
-    print('\nAll institutions')
-    print('================')
-    rank_code_release_frequency_per_entity(data, top=10, min_count=1)
-    print('\nInstitutions with at least 10 papers')
-    print('====================================')
-    rank_code_release_frequency_per_entity(data, top=10, min_count=10)
+    print('\nInstitutions')
+    print('============')
+    rank_code_release_frequency_per_entity(data, top=20, min_count=1)
 
-    print('\n============================')
-    print('Most papers per code release')
-    print('============================\n')
-    print('Format: rank. name #papers')
-    
-    rank_frequency_per_code_release(data, top=10)
+    print('\nWords')
+    print('=====')
+    rank_code_release_frequency_per_entity(data, top=20, min_count=5, words=True)
+
+    print('\nBiggest publishers')
+    print('==================')
+    rank_pubs_per_code_release(data, top=20)
 
 
 def parse_args():
