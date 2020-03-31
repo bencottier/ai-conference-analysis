@@ -22,7 +22,9 @@ REGEX_PATTERNS = {
     'number': re.compile('[0-9][A-Za-z]'),
     'all-caps': re.compile('[A-Z][A-Z]+'),
     'camel-caps': re.compile('[A-Z]+[a-z]+[A-Z]+'),
+    'footer-affiliation': re.compile('^([^\x00-\x7F]|[0-9]|[0-9]:? )[A-Za-z]+'),
 }
+CONFERENCE_SIGN = '33rd Conference'
 
 
 def is_valid_line(line, index=None, invalid_indices=list()):
@@ -128,19 +130,49 @@ def is_valid_entity(entity, metadata, threshold=0.25, tag=None):
 
 
 def extract_affiliations(txt_path, metadata, predictor):
-    with open(txt_path, 'r') as f:
         i = 0
+    lines = list()
         header_lines = list()
-        for line in f.readlines():
-            # NOTE assumption: affiliations listed above abstract
+    post_abstract = False
+    sign_idx = -1
+    with open(txt_path, 'r') as f:
+        for i, line in enumerate(f.readlines()):
+            lines.append(line.strip())
             if 'Abstract\n' in line:
+                post_abstract = True
+            elif CONFERENCE_SIGN in line:
+                sign_idx = i
                 break
-            else:
+            elif not post_abstract:
                 line = line.strip()
                 if is_valid_line(line):
                     header_lines.append(line)
             i += 1
     
+    footer_lines = list()
+    footer_affiliations_started = False
+    done = False
+    patience = 3
+    if sign_idx > 0:
+        for line in reversed(lines[:sign_idx]):
+            if not is_valid_line(line):
+                continue
+            match = re.match(REGEX_PATTERNS['footer-affiliation'], line)
+            if match and not footer_affiliations_started:
+                footer_affiliations_started = True
+            if footer_affiliations_started:
+                if match:
+                    footer_lines.append(line)
+                else:
+                    # Assume no line breaks between affiliations
+                    # So we are done
+                    done = True
+            if not (footer_affiliations_started or '@' in line):
+                patience -= 1
+            if done or patience <= 0:  # not too far from page bottom
+                break
+    
+    header_lines.extend(footer_lines)
     # pprint(header_lines)
     header_lines = preprocess_header(header_lines)
     # print("")
