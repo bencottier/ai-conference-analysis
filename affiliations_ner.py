@@ -17,6 +17,12 @@ UNICODE_CONVERSION = {
     '\ufb03': 'ffi',
     '\ufb04': 'ffl',
 }
+PER_EXCEPTIONS = ['Mila', 'Deepmind', 'Stanford']
+REGEX_PATTERNS = {
+    'number': re.compile('[0-9][A-Za-z]'),
+    'all-caps': re.compile('[A-Z][A-Z]+'),
+    'camel-caps': re.compile('[A-Z]+[a-z]+[A-Z]+'),
+}
 
 
 def is_valid_line(line, index=None, invalid_indices=list()):
@@ -62,12 +68,10 @@ def postprocess_entities(results, metadata):
     passed_title = False
     for result in results:
         entity = str()
-        for i, (word, tag) in enumerate(zip(result["words"], result["tags"])):
-            if 'PER' in tag or (i == 0 and 'ORG' in tag):
-                # Not a perfect indication, but gets the vast majority
-                passed_title = True
-            if not passed_title:
-                continue
+        for word, tag in zip(result["words"], result["tags"]):
+            if tag == 'U-PER':
+                # Sometimes U-ORG is mistaken for U-PER e.g. DeepMind
+                maybe_add_entity(word, tag=tag)
             elif tag == 'U-ORG':
                 maybe_add_entity(word)
             elif tag == 'B-ORG':
@@ -81,21 +85,38 @@ def postprocess_entities(results, metadata):
     return entities
 
 
-def is_valid_entity(entity, metadata, threshold=0.25):
+def is_valid_entity(entity, metadata, threshold=0.25, tag=None):
     clean_entity = ''.join(c for c in entity if not c.isdigit())
+
     # Check if entity is an email address
     if '@' in entity and '.' in entity:
         return False
+
     # Check if entity is actually a person (author from metadata)
     for author in metadata['authors']:
         dist = edit_distance(clean_entity, author)
         if (dist / len(author)) < threshold:
             # Close enough to be an author, therefore not affiliation
             return False
+
     # Ignore university schools and departments
     # NOTE this is imperfect: there is 'college', 'laboratory', etc.
-    # if any([x in entity.lower() for x in ['school', 'department']]):
+    # if any([x in clean_entity.lower() for x in ['school', 'department']]):
     #     return False
+
+    if tag and tag == 'U-PER':
+        # Hard-coded exceptions
+        if any([ke in clean_entity for ke in PER_EXCEPTIONS]):
+            return True
+        # All-caps with at least 2 caps
+        elif re.match(REGEX_PATTERNS['all-caps'], clean_entity):
+            return True
+        # Camel-caps with at least 2 caps
+        elif re.match(REGEX_PATTERNS['camel-caps'], clean_entity):
+            return True
+        else:
+            return False
+
     return True
 
 
