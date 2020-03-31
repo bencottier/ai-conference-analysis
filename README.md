@@ -32,29 +32,16 @@ See `environment.yml` for dependencies. The main ones are
 ## Sample results
 
 ```
-Lowest fraction of papers with code
+Code release fraction for biggest publishers
 
-1. Cognitive Computing Lab (0.17, 6)
-2. California Institute of Technology (0.2, 5)
-3. NEC Corporation (0.25, 4)
-4. The University of Tokyo (0.25, 4)
-5. Google Inc. (0.25, 4)
-6. University of Minnesota (0.25, 12)
-7. Baidu Research (0.29, 7)
-8. Intel AI Lab (0.33, 3)
-9. Universitat Pompeu Fabra (0.33, 3)
-10. University at Buffalo (0.33, 3)
-
-Highest fraction of papers with code
-
-1. University College London (1.0, 16)
-2. University of Amsterdam (1.0, 11)
-3. PSL Research University (1.0, 10)
-4. Texas A&M University (1.0, 9)
-5. Université Paris (1.0, 9)
-6. University of British Columbia (1.0, 9)
-7. Imperial College London (1.0, 8)
-8. Aalto University (1.0, 8)
-9. University of Tokyo (1.0, 8)
-10. National University of Singapore (1.0, 7)
+1. Carnegie Mellon University (0.72, 76)
+2. Stanford University (0.81, 74)
+3. University of California (0.69, 62)
+4. Google Research (0.58, 55)
+5. Microsoft Research (0.76, 46)
+6. MIT (0.8, 44)
+7. Columbia University (0.73, 41)
+8. Princeton University (0.44, 39)
+9. Facebook AI Research (0.76, 37)
+10. Tsinghua University (0.75, 36)
 ```
