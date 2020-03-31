@@ -14,7 +14,7 @@ The analysis is imperfect. Some papers (49 out of 1428) don't make it all the wa
 
 ## Quick replication 
 
-Run `code_release_analysis.py` to replicate the analysis of NeurIPS 2019 code release. Requires `python >= 3.6`.
+Run `code_release_analysis.py` to replicate the analysis of NeurIPS 2019 code release, found in `out/neurips_2019/code_rankings.txt`. Requires `python >= 3.6`.
 
 ## Going deeper
 
