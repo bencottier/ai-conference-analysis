@@ -206,26 +206,34 @@ def main(args):
     predictor = pretrained.named_entity_recognition_with_elmo_peters_2018()
     
     # Ignore problematic files
-    ignore = [
+    ignore = {
         '9724',  # PDF not available on website
         '9659', '9165', '8511', '9485', '9430', '9393', '9341', '9245', 
         '9166', '8858', '8687', '8574', '8518',  # no whitespace
         '9305', '9171',  # Each page is an image
         '8823',  # NeurIPS template PDF (probably mistaken)
         '8646',  # Supplementary material (probably mistaken)
-    ]
+    }
+
+    # For debugging: ignore everything except these files
+    keep = set()
 
     output = list()
     data_path = args.data
 
     for i, metadata in enumerate(metadatas):
         pdf_fname = os.path.split(metadata['pdf'])[1]
-        if any([ig in pdf_fname for ig in ignore]):
+
+        paper_id = pdf_fname.split('-')[0]
+        if len(keep) > 0 and paper_id not in keep:
             continue
+        print(paper_id)
+        if paper_id in ignore:
+            print('Ignored')
+            continue
+        
         txt_fname = pdf_fname.replace('.pdf', '.txt')
         txt_path = os.path.join(data_path, txt_fname)
-        paper_id = pdf_fname.split('-')[0]
-        print(paper_id)
 
         affiliations = extract_affiliations(txt_path, metadata, predictor)
 
