@@ -3,6 +3,7 @@
         "name": "8296-multimodal-model-agnostic-meta-learning-via-task-aware-modulation",
         "code": true,
         "affiliations": [
+            "Hua Sun",
             "University of Michigan",
             "University of Southern California"
         ]
@@ -12,6 +13,7 @@
         "code": true,
         "affiliations": [
             "HRL Laboratories",
+            "LTCI",
             "Department of Statistics",
             "University of Oxford",
             "University of Virginia"
@@ -21,6 +23,8 @@
         "name": "8318-asymptotic-guarantees-for-learning-generative-models-with-the-sliced-wasserstein-distance",
         "code": true,
         "affiliations": [
+            "LTCI",
+            "CMLA",
             "Department of Statistics",
             "University of Oxford"
         ]
@@ -30,7 +34,10 @@
         "code": true,
         "affiliations": [
             "Computer Science and Applied Math",
-            "Weizmann Institute of Science"
+            "Weizmann Institute of Science",
+            "European Research Council",
+            "ERC",
+            "Horizon"
         ]
     },
     {
@@ -93,6 +100,7 @@
         "name": "8320-first-exit-time-analysis-of-stochastic-gradient-descent-under-heavy-tailed-gradient-noise",
         "code": true,
         "affiliations": [
+            "LTCI",
             "Department of Statistics",
             "University of Oxford",
             "Management Science and Information Systems",
@@ -116,6 +124,8 @@
         "name": "8317-imitation-learning-from-observations-by-minimizing-inverse-dynamics-disagreement",
         "code": true,
         "affiliations": [
+            "Beijing National Research Center for Information Science and Technology",
+            "BNRist",
             "State Key Lab",
             "Intelligent Technology and Systems",
             "Department of Computer Science and Technology",
@@ -132,7 +142,17 @@
     {
         "name": "8314-deepusps-deep-robust-unsupervised-saliency-prediction-via-self-supervision",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Karlsruhe Institute of Technology",
+            "Bosch Center",
+            "AI",
+            "Bosch GmbH",
+            "Bosch Research",
+            "Bosch GmbH",
+            "Computer Vision Group",
+            "University of Freiburg",
+            "Dax"
+        ]
     },
     {
         "name": "8313-multi-resolution-weak-supervision-for-sequential-data",
@@ -159,7 +179,7 @@
         "code": false,
         "affiliations": [
             "Boston University",
-            "IBM Research Almaden"
+            "IBM Research"
         ]
     },
     {
@@ -180,7 +200,9 @@
         "affiliations": [
             "School of Electrical and Computer Engineering",
             "Coulter Department of Biomedical Engineering",
-            "Georgia Institute of Technology"
+            "Georgia Institute of Technology",
+            "JL",
+            "DSO National Laboratories"
         ]
     },
     {
@@ -192,7 +214,9 @@
             "Department of Statistics",
             "Rutgers University",
             "Department of Statistics",
-            "Rutgers University"
+            "Rutgers University",
+            "Baidu Research",
+            "Baidu Research"
         ]
     },
     {
@@ -277,7 +301,8 @@
             "IBM Research",
             "Ant Financial",
             "Advanced Institute of Information Technology",
-            "Peking University"
+            "Peking University",
+            "NSF China"
         ]
     },
     {
@@ -309,6 +334,7 @@
         "name": "9703-gradient-based-adaptive-markov-chain-monte-carlo",
         "code": true,
         "affiliations": [
+            "DeepMind",
             "Department of Statistical Science",
             "University College of London",
             "Department of Statistics",
@@ -318,7 +344,12 @@
     {
         "name": "9707-exploring-algorithmic-fairness-in-robust-graph-covering-problems",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Pennsylvania State University",
+            "Harvard University",
+            "University of Denver",
+            "University of Southern California"
+        ]
     },
     {
         "name": "9705-imitation-projected-programmatic-reinforcement-learning",
@@ -429,6 +460,7 @@
             "Google Inc.",
             "Stanford University",
             "Stanford University",
+            "Stanford",
             "Google Brain",
             "Google Inc.",
             "Google Brain",
@@ -453,7 +485,9 @@
             "Microsoft Research",
             "Montreal",
             "Machine Learning Department",
-            "Carnegie Mellon University"
+            "Carnegie Mellon University",
+            "Microsoft Research",
+            "Montreal"
         ]
     },
     {
@@ -470,7 +504,10 @@
         "name": "9692-wasserstein-dependency-measure-for-representation-learning",
         "code": false,
         "affiliations": [
+            "Mila",
             "Google Brain",
+            "Mila",
+            "Deepmind",
             "Google Brain",
             "Google Brain"
         ]
@@ -493,7 +530,10 @@
         "name": "9690-exact-combinatorial-optimization-with-graph-convolutional-neural-networks",
         "code": true,
         "affiliations": [
-            "University of Bologna"
+            "Mila",
+            "University of Bologna",
+            "Mila",
+            "Mila"
         ]
     },
     {
@@ -557,9 +597,9 @@
         "name": "9684-stacked-capsule-autoencoders",
         "code": true,
         "affiliations": [
-            "Applied AI Lab",
+            "AI Lab",
             "Department of Statistics",
-            "Google Brain",
+            "DeepMind",
             "Oxford Robotics Institute",
             "University of Oxford",
             "University of Oxford"
@@ -602,6 +642,11 @@
             "Complex Network Research",
             "Northeastern University",
             "Khoury College of Computer Sciences",
+            "Northeastern University",
+            "Cancer Systems Biology",
+            "Dana Farber Cancer Institute",
+            "Brigham and Women",
+            "Center for Complex Network Research",
             "Northeastern University"
         ]
     },
@@ -613,17 +658,17 @@
             "BU ARC",
             "Sorbonne Universit\u00e9",
             "CNRS",
-            "LIP6",
+            "LIP",
             "Sorbonne Universit\u00e9",
             "CNRS",
-            "LIP6",
+            "LIP",
             "Thales Land and Air Systems",
             "BU ARC",
             "Thales Land and Air Systems",
             "BU ARC",
             "Sorbonne Universit\u00e9",
             "CNRS",
-            "LIP6"
+            "LIP"
         ]
     },
     {
@@ -639,6 +684,7 @@
         "code": true,
         "affiliations": [
             "Google Brain",
+            "PetCube",
             "Uber AI Labs"
         ]
     },
@@ -664,7 +710,11 @@
     {
         "name": "9671-input-output-equivalence-of-unitary-and-contractive-rnns",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "ECE",
+            "ECE",
+            "ECE"
+        ]
     },
     {
         "name": "9674-structured-and-deep-similarity-matching-via-structured-and-deep-hebbian-networks",
@@ -690,6 +740,7 @@
         "affiliations": [
             "University of Arizona",
             "Google Research",
+            "Boston University",
             "Boston University"
         ]
     },
@@ -756,6 +807,8 @@
         "code": false,
         "affiliations": [
             "Georgia Tech",
+            "Georgia Tech",
+            "Work",
             "Georgia Tech"
         ]
     },
@@ -808,6 +861,7 @@
         "name": "9657-text-based-interactive-recommendation-via-constraint-augmented-reinforcement-learning",
         "code": false,
         "affiliations": [
+            "Natural Language Feedback",
             "Duke University",
             "Samsung Research America",
             "University at Buffalo"
@@ -825,7 +879,10 @@
         "name": "9652-multi-criteria-dimensionality-reduction-with-applications-to-fairness",
         "code": true,
         "affiliations": [
-            "Tantipongpipat"
+            "Tantipongpipat",
+            "NSF",
+            "NSF",
+            "NSF"
         ]
     },
     {
@@ -843,6 +900,7 @@
             "Department of Statistics",
             "Rutgers University",
             "Cognitive Computing Lab",
+            "Baidu Research",
             "Baidu Research"
         ]
     },
@@ -869,7 +927,8 @@
         "code": true,
         "affiliations": [
             "Moscow Institute of Physics and Technology",
-            "Sberbank"
+            "Sberbank",
+            "Yandex"
         ]
     },
     {
@@ -879,7 +938,8 @@
             "ETH Zurich",
             "EPFL",
             "EPFL",
-            "ETH Zurich"
+            "ETH Zurich",
+            "ERC"
         ]
     },
     {
@@ -936,7 +996,8 @@
         "affiliations": [
             "Hebrew University",
             "Google Research",
-            "Google Research"
+            "Google Research",
+            "Simons Institute for the Theory of Computing"
         ]
     },
     {
@@ -954,7 +1015,8 @@
         "affiliations": [
             "Department of Computer Science",
             "University of California",
-            "School of Computer Science"
+            "of Computer Science",
+            "Tel Aviv University"
         ]
     },
     {
@@ -1006,7 +1068,8 @@
             "New York University",
             "Center for Data Science",
             "New York University",
-            "Microsoft"
+            "Microsoft",
+            "AGW"
         ]
     },
     {
@@ -1027,7 +1090,8 @@
             "Hikvision Research Institute",
             "Rutgers University",
             "University of Delaware",
-            "Rutgers University"
+            "Rutgers University",
+            "Hikvision Research Institute"
         ]
     },
     {
@@ -1044,7 +1108,19 @@
     {
         "name": "9631-solving-a-class-of-non-convex-min-max-games-using-iterative-first-order-methods",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Department of Industrial and Systems Engineering",
+            "University of Southern California",
+            "Department of Electrical Engineering",
+            "Princeton University",
+            "Department of Industrial and Systems Engineering",
+            "University of Southern California",
+            "Science and Operations Department",
+            "Marshall School of Business",
+            "University of Southern California",
+            "Department of Industrial and Systems Engineering",
+            "University of Southern California"
+        ]
     },
     {
         "name": "9626-generalized-matrix-means-for-semi-supervised-learning-with-multilayer-graphs",
@@ -1059,12 +1135,17 @@
         "code": true,
         "affiliations": [
             "Lyrebird AI",
+            "Mila",
             "University of Montreal",
             "Lyrebird AI",
             "Lyrebird AI",
             "Lyrebird AI",
+            "Mila",
+            "Mila",
+            "Mila",
             "University of Montreal",
             "CIFAR Program Co",
+            "Mila",
             "University of Montreal",
             "CIFAR"
         ]
@@ -1087,7 +1168,13 @@
     {
         "name": "9621-icebreaker-element-wise-efficient-information-acquisition-with-a-bayesian-deep-latent-gaussian-model",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Microsoft Research",
+            "Microsoft Research",
+            "Microsoft Research",
+            "Department of Engineering",
+            "University of Cambridge"
+        ]
     },
     {
         "name": "9627-online-optimal-control-with-linear-dynamics-and-predictions-algorithms-and-regret-analysis",
@@ -1104,7 +1191,11 @@
     {
         "name": "9625-generating-diverse-high-fidelity-images-with-vq-vae-2",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
+        ]
     },
     {
         "name": "9618-invariance-inducing-regularization-using-worst-case-transformations-suffices-to-boost-accuracy-and-spatial-robustness",
@@ -1148,7 +1239,14 @@
     {
         "name": "9619-algorithm-dependent-generalization-bounds-for-overparameterized-deep-residual-networks",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Department of Computer Science",
+            "University of California",
+            "Department of Computer Science",
+            "University of California",
+            "Department of Statistics",
+            "University of California"
+        ]
     },
     {
         "name": "9617-deep-leakage-from-gradients",
@@ -1163,7 +1261,6 @@
         "affiliations": [
             "CNRS",
             "IRISA",
-            "Univ",
             "OCA",
             "Nice",
             "Univ",
@@ -1187,7 +1284,8 @@
             "Google Research",
             "Google Research",
             "Google Research",
-            "Google Research"
+            "Google Research",
+            "DeepMind"
         ]
     },
     {
@@ -1196,12 +1294,14 @@
         "affiliations": [
             "InstaDeep",
             "InstaDeep",
+            "DeepMind",
             "Sorbonne Universit\u00e9",
             "CNRS",
             "Sorbonne Universit\u00e9",
             "InstaDeep",
             "InstaDeep",
-            "InstaDeep"
+            "InstaDeep",
+            "DeepMind"
         ]
     },
     {
@@ -1246,14 +1346,15 @@
         "name": "9612-discrete-flows-invertible-generative-models-of-discrete-data",
         "code": true,
         "affiliations": [
-            "Google Brain Columbia University"
+            "Google Brain Columbia University",
+            "Google Brain",
+            "NSF"
         ]
     },
     {
         "name": "9607-bayesian-layers-a-module-for-neural-network-uncertainty",
         "code": true,
         "affiliations": [
-            "Google Brain",
             "Google Brain",
             "Google Brain"
         ]
@@ -1325,10 +1426,10 @@
         "name": "9599-policy-poisoning-in-batch-reinforcement-learning-and-control",
         "code": true,
         "affiliations": [
-            "University of WisconsinMadison",
-            "University of WisconsinMadison",
+            "University of Wisconsin",
+            "University of Wisconsin",
             "Microsoft Research New York",
-            "University of WisconsinMadison"
+            "University of Wisconsin"
         ]
     },
     {
@@ -1337,7 +1438,8 @@
         "affiliations": [
             "Yandex Research",
             "Department of Engineering",
-            "University of Cambridge"
+            "University of Cambridge",
+            "Cambridge University Department of Engineering"
         ]
     },
     {
@@ -1438,6 +1540,7 @@
         "name": "9590-hamiltonian-descent-for-composite-objectives",
         "code": false,
         "affiliations": [
+            "DeepMind",
             "DeepMind / University of Oxford"
         ]
     },
@@ -1547,7 +1650,11 @@
     {
         "name": "9579-when-to-use-parametric-models-in-reinforcement-learning",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
+        ]
     },
     {
         "name": "9576-efficient-neural-architecture-transformation-search-in-channel-level-for-object-detection",
@@ -1572,7 +1679,9 @@
         "code": true,
         "affiliations": [
             "University of Wisconsin",
-            "Google"
+            "Google",
+            "XaiPient",
+            "Axiom of Completeness"
         ]
     },
     {
@@ -1668,11 +1777,7 @@
         "name": "9572-stochastic-frank-wolfe-for-composite-convex-minimization",
         "code": true,
         "affiliations": [
-            "Department of Computer Science",
-            "LIONS",
-            "LTCI",
-            "Telecom Paris",
-            "Universite Paris"
+            "Department of Computer Science"
         ]
     },
     {
@@ -1684,7 +1789,8 @@
             "ETH Z\u00fcrich",
             "National Engineering Laboratory for Video Technology",
             "Peking University",
-            "Peng Cheng Laboratory"
+            "Peng Cheng Laboratory",
+            "Peking University"
         ]
     },
     {
@@ -1692,7 +1798,7 @@
         "code": false,
         "affiliations": [
             "Flatiron Institute",
-            "Rutgers University NYU Langone Medical Center"
+            "Rutgers University"
         ]
     },
     {
@@ -1779,7 +1885,8 @@
             "UIUC",
             "UIUC",
             "EPFL",
-            "UIUC"
+            "UIUC",
+            "MURI"
         ]
     },
     {
@@ -1797,6 +1904,10 @@
         "affiliations": [
             "Universitat Pompeu Fabra",
             "Barcelona",
+            "Lancaster University",
+            "CPB",
+            "PhD",
+            "STOR",
             "Lancaster University"
         ]
     },
@@ -1871,6 +1982,7 @@
             "Google Research",
             "Google Research",
             "Google Research",
+            "DeepMind",
             "Google Research"
         ]
     },
@@ -1914,7 +2026,9 @@
             "Microsoft Research",
             "Microsoft Research",
             "Microsoft Research",
-            "Microsoft Research"
+            "Microsoft Research",
+            "Co",
+            "Microsoft Research Cambridge"
         ]
     },
     {
@@ -1965,7 +2079,7 @@
         "name": "9542-inverting-deep-generative-models-one-layer-at-a-time",
         "code": true,
         "affiliations": [
-            "UT Austin Amazon"
+            "Amazon"
         ]
     },
     {
@@ -1983,8 +2097,9 @@
         "affiliations": [
             "Samsung",
             "HSE Laboratory",
-            "HSE",
-            "Samsung AI Center Moscow"
+            "Samsung AI Center Moscow",
+            "Skolkovo Institute of Science and Technology",
+            "National Research University Higher School of Economics"
         ]
     },
     {
@@ -1993,10 +2108,10 @@
         "affiliations": [
             "Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne",
             "Signal Processing Laboratory",
-            "LTS4",
+            "LTS",
             "Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne",
             "Signal Processing Laboratory",
-            "LTS4",
+            "LTS",
             "Universit\u00e9 Paris",
             "Est",
             "LIGM",
@@ -2006,7 +2121,7 @@
             "UPEM",
             "Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne",
             "Signal Processing Laboratory",
-            "LTS4"
+            "LTS"
         ]
     },
     {
@@ -2028,7 +2143,7 @@
         "name": "9538-primal-dual-block-generalized-frank-wolfe",
         "code": true,
         "affiliations": [
-            "UT Austin Amazon"
+            "Amazon"
         ]
     },
     {
@@ -2043,7 +2158,15 @@
         "name": "9534-adversarial-robustness-through-local-linearization",
         "code": false,
         "affiliations": [
-            "Google"
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "Google",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
         ]
     },
     {
@@ -2094,6 +2217,7 @@
             "University of Texas",
             "University of Texas",
             "Microsoft Research India",
+            "Microsoft Research India",
             "Microsoft Research India"
         ]
     },
@@ -2138,6 +2262,7 @@
             "University of T\u00fcbingen",
             "UvA",
             "Bosch Delta Lab",
+            "University of Amsterdam",
             "University of Amsterdam"
         ]
     },
@@ -2146,7 +2271,12 @@
         "code": true,
         "affiliations": [
             "Department of Computer Science",
-            "Columbia University"
+            "Columbia University",
+            "Columbia University",
+            "Data Science Institute",
+            "New York Genome Center",
+            "Spotify Technology S.A.",
+            "New York Genome Center"
         ]
     },
     {
@@ -2156,6 +2286,7 @@
             "Electrical Engineering Department",
             "KU Leuven",
             "Computer Science Department",
+            "KU Leuven",
             "Computer Science Department",
             "University of California"
         ]
@@ -2164,8 +2295,9 @@
         "name": "9524-towards-modular-and-programmable-architecture-search",
         "code": false,
         "affiliations": [
-            "Carnegie Mellon University1",
-            "Microsoft Research Montreal3"
+            "Carnegie Mellon University",
+            "Microsoft Research Montreal",
+            "Petuum"
         ]
     },
     {
@@ -2192,7 +2324,8 @@
         "code": true,
         "affiliations": [
             "Department of Computer Science and Engineering",
-            "University of Connecticut"
+            "University of Connecticut",
+            "NSF"
         ]
     },
     {
@@ -2254,7 +2387,8 @@
             "University of Toronto",
             "Vector Institute",
             "Google Research",
-            "Google Research"
+            "Google Research",
+            "Google"
         ]
     },
     {
@@ -2299,13 +2433,21 @@
         "name": "9517-an-algorithmic-framework-for-differentially-private-data-analysis-on-trusted-processors",
         "code": false,
         "affiliations": [
+            "Microsoft",
+            "Alibaba Group",
             "Microsoft"
         ]
     },
     {
         "name": "9513-non-normal-recurrent-neural-network-nnrnn-learning-long-time-dependencies-while-improving-expressivity-with-transient-dynamics",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "D\u00e9partement de Math\u00e9matiques et Statistiques",
+            "CIFAR",
+            "IVADO",
+            "Mila",
+            "Quebec AI Institute"
+        ]
     },
     {
         "name": "9509-rudder-return-decomposition-for-delayed-rewards",
@@ -2349,7 +2491,8 @@
             "Google Research",
             "Hebrew University",
             "Google Research",
-            "Hebrew University"
+            "Hebrew University",
+            "Google Research"
         ]
     },
     {
@@ -2365,7 +2508,8 @@
             "Department of Computer Science",
             "University of Texas",
             "Department of Computer Science",
-            "University of Illinois"
+            "University of Illinois",
+            "UIUC"
         ]
     },
     {
@@ -2386,6 +2530,11 @@
         "name": "9499-recurrent-kernel-networks",
         "code": true,
         "affiliations": [
+            "CNRS",
+            "Lyon",
+            "Universit\u00e9 Lyon",
+            "CNRS",
+            "Laboratoire de Biom\u00e9trie et Biologie Evolutive UMR",
             "CNRS"
         ]
     },
@@ -2451,9 +2600,9 @@
         "code": false,
         "affiliations": [
             "SequeL Team",
-            "Inria Lille Nord Europe",
+            "Inria Lille",
             "SequeL Team",
-            "Inria Lille Nord Europe"
+            "Inria Lille"
         ]
     },
     {
@@ -2535,7 +2684,10 @@
             "Google Research",
             "Google Research",
             "Google Research",
-            "Google Research"
+            "Google Research",
+            "Google AI Residency",
+            "Google Research",
+            "Brain"
         ]
     },
     {
@@ -2557,7 +2709,8 @@
             "MIT",
             "Amazon Search",
             "Computer Science",
-            "Rice University"
+            "Rice University",
+            "Amazon Search"
         ]
     },
     {
@@ -2590,7 +2743,8 @@
         "code": true,
         "affiliations": [
             "Max Planck Institute for Informatics",
-            "University of T\u00fcbingen"
+            "University of T\u00fcbingen",
+            "University of Amsterdam"
         ]
     },
     {
@@ -2642,19 +2796,30 @@
     {
         "name": "9471-episodic-memory-in-lifelong-language-learning",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "9470-biases-for-emergent-communication-in-multi-agent-reinforcement-learning",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
+        ]
     },
     {
         "name": "9473-communication-efficient-distributed-sgd-with-sketching",
         "code": true,
         "affiliations": [
+            "Amazon",
             "Johns Hopkins University",
             "Johns Hopkins University",
+            "Johns Hopkins University",
+            "Simons Institute for the Theory of Computing",
             "Johns Hopkins University"
         ]
     },
@@ -2742,7 +2907,9 @@
     {
         "name": "9463-the-option-keyboard-combining-skills-in-reinforcement-learning",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "9462-a-composable-specification-language-for-reinforcement-learning-tasks",
@@ -2795,7 +2962,8 @@
         "affiliations": [
             "Univ",
             "CNRS",
-            "Centrale Lille"
+            "Centrale Lille",
+            "CRIStAL"
         ]
     },
     {
@@ -2808,6 +2976,9 @@
             "IIT Gandhinagar",
             "Microsoft Research India",
             "Boston University",
+            "Microsoft Research India",
+            "Work",
+            "Research Fellow",
             "Microsoft Research India"
         ]
     },
@@ -2843,14 +3014,15 @@
             "School of Computer Science",
             "The University of Auckland",
             "School of Computer Science",
-            "Beihang University"
+            "Beihang University",
+            "School of Computer Science and Technology",
+            "Beijing Institute of Technology"
         ]
     },
     {
         "name": "9454-sim2real-transfer-learning-for-3d-human-pose-estimation-motion-to-the-rescue",
         "code": false,
         "affiliations": [
-            "VGG",
             "Department of Engineering Science",
             "University of Oxford"
         ]
@@ -2981,7 +3153,10 @@
     {
         "name": "9438-learning-search-spaces-for-bayesian-optimization-another-view-of-hyperparameter-transfer-learning",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Amazon",
+            "Amazon"
+        ]
     },
     {
         "name": "9436-band-limited-gaussian-processes-the-sinc-kernel",
@@ -3011,7 +3186,9 @@
     {
         "name": "9449-on-the-inductive-bias-of-neural-tangent-kernels",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "CNRS"
+        ]
     },
     {
         "name": "9432-causal-regularization",
@@ -3133,6 +3310,7 @@
         "affiliations": [
             "Department of Statistics",
             "University of Oxford",
+            "DeepMind",
             "Microsoft Research"
         ]
     },
@@ -3185,7 +3363,9 @@
     {
         "name": "9413-hindsight-credit-assignment",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "9409-a-general-framework-for-symmetric-property-estimation",
@@ -3222,7 +3402,7 @@
             "Alan Turing Institute",
             "University of Warwick",
             "Alan Turing Institute",
-            "CSIROs Data61",
+            "CSIRO",
             "Translational Data Science",
             "University of Sydney"
         ]
@@ -3230,7 +3410,9 @@
     {
         "name": "9411-generalization-of-reinforcement-learners-with-working-and-episodic-memory",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "9408-selective-sampling-based-scalable-sparse-subspace-clustering",
@@ -3250,7 +3432,8 @@
         "name": "9402-theoretical-limits-of-pipeline-parallel-optimization-and-application-to-distributed-deep-learning",
         "code": false,
         "affiliations": [
-            "Huawei Noahs Ark Lab"
+            "Huawei Noah",
+            "Ark Lab"
         ]
     },
     {
@@ -3266,13 +3449,15 @@
     {
         "name": "9400-towards-interpretable-reinforcement-learning-using-attention-augmented-agents",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "9406-exponentially-convergent-stochastic-k-pca-without-variance-reduction",
         "code": false,
         "affiliations": [
-            "Amazon AI"
+            "Amazon"
         ]
     },
     {
@@ -3291,6 +3476,8 @@
         "name": "9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing",
         "code": true,
         "affiliations": [
+            "CREST",
+            "ENSAE",
             "Universit\u00e9 Paris",
             "Universit\u00e9 Paris"
         ]
@@ -3378,14 +3565,18 @@
         "code": true,
         "affiliations": [
             "Applied Artificial Intelligence Institute",
-            "AI2",
+            "AI",
             "Deakin University"
         ]
     },
     {
         "name": "9391-think-out-of-the-box-generically-constrained-asynchronous-composite-optimization-and-hedging",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind",
+            "University of Alberta"
+        ]
     },
     {
         "name": "9389-tight-regret-bounds-for-model-based-reinforcement-learning-with-greedy-policies",
@@ -3398,7 +3589,8 @@
         "name": "9388-are-labels-required-for-improving-adversarial-robustness",
         "code": true,
         "affiliations": [
-            "Po"
+            "Po",
+            "DeepMind"
         ]
     },
     {
@@ -3427,7 +3619,7 @@
         "code": true,
         "affiliations": [
             "Australian National University",
-            "Data61",
+            "Data6",
             "CWI",
             "Leiden University",
             "Inria",
@@ -3454,7 +3646,8 @@
             "University of Amsterdam",
             "UvA",
             "Bosch Delta Lab",
-            "University of Amsterdam"
+            "University of Amsterdam",
+            "Google"
         ]
     },
     {
@@ -3516,6 +3709,8 @@
         "code": false,
         "affiliations": [
             "Purdue University",
+            "VinAI",
+            "Deepmind",
             "Purdue University"
         ]
     },
@@ -3524,7 +3719,9 @@
         "code": false,
         "affiliations": [
             "NEC Corporation",
-            "The University of Tokyo"
+            "The University of Tokyo",
+            "JST",
+            "ACT"
         ]
     },
     {
@@ -3549,6 +3746,7 @@
             "CNRS",
             "ENS",
             "Universit\u00e9 PSL",
+            "Deepmind",
             "CNRS",
             "ENS",
             "Universit\u00e9 PSL"
@@ -3583,7 +3781,8 @@
         "name": "9370-adaptive-density-estimation-for-generative-models",
         "code": false,
         "affiliations": [
-            "Noahs Ark Lab",
+            "Noah",
+            "Ark Lab",
             "Huawei"
         ]
     },
@@ -3591,6 +3790,7 @@
         "name": "9366-connections-between-mirror-descent-thompson-sampling-and-the-information-ratio",
         "code": false,
         "affiliations": [
+            "DeepMind",
             "University of Copenhagen"
         ]
     },
@@ -3607,20 +3807,31 @@
             "RIKEN AIP",
             "JST PRESTO",
             "Keio University",
-            "National Institute of Informatics"
+            "National Institute of Informatics",
+            "JSPS",
+            "JST",
+            "PRESTO",
+            "JST",
+            "ACT",
+            "JST",
+            "ERATO"
         ]
     },
     {
         "name": "9365-margin-based-generalization-lower-bounds-for-boosted-classifiers",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "EECS",
+            "Department of Computer Science",
+            "Aarhus University"
+        ]
     },
     {
         "name": "9364-debiased-bayesian-inference-for-average-treatment-effects",
         "code": true,
         "affiliations": [
             "Department of Mathematics",
-            "Kings College London",
+            "College London",
             "Mathematical Institute",
             "Leiden University"
         ]
@@ -3655,9 +3866,12 @@
         "name": "9359-adaptive-temporal-difference-learning-for-policy-evaluation-with-per-state-uncertainty-estimates",
         "code": false,
         "affiliations": [
+            "DeepMind",
             "Google Brain",
             "Google Brain",
             "Google Brain",
+            "DeepMind",
+            "DeepMind",
             "Google Brain",
             "Universitat Pompeu Fabra"
         ]
@@ -3690,7 +3904,13 @@
     {
         "name": "9357-online-continual-learning-with-maximal-interfered-retrieval",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Mila",
+            "Mila",
+            "Mila",
+            "Mila",
+            "Mila"
+        ]
     },
     {
         "name": "9358-neural-attribution-for-semantic-bug-localization-in-student-programs",
@@ -3734,14 +3954,19 @@
         "code": true,
         "affiliations": [
             "Applied Artificial Intelligence Institute",
-            "AI2",
+            "AI",
             "Deakin University"
         ]
     },
     {
         "name": "9354-gradient-based-sample-selection-for-online-continual-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Mila",
+            "Mila",
+            "Mila",
+            "Mila"
+        ]
     },
     {
         "name": "9348-meta-inverse-reinforcement-learning-with-probabilistic-context-variables",
@@ -3757,7 +3982,9 @@
         "affiliations": [
             "Tata Consultancy Services Limited",
             "Department of Computer Science and Engineering",
-            "Indian Institute of Technology Madras"
+            "Indian Institute of Technology Madras",
+            "DST",
+            "ECRA"
         ]
     },
     {
@@ -3767,7 +3994,8 @@
             "Qualcomm AI Research",
             "University of Amsterdam",
             "Berkeley AI Research",
-            "Facebook AI Research"
+            "Facebook AI Research",
+            "Berkeley AI Research"
         ]
     },
     {
@@ -3808,7 +4036,7 @@
         "name": "9339-structured-graph-learning-via-laplacian-spectral-constraints",
         "code": true,
         "affiliations": [
-            "Department of Industrial Engineering and Data Analytics(cid:63",
+            "Department of Industrial Engineering and Data Analytics(cid:6",
             "Department of Electronic and Computer Engineering",
             "Hong Kong University of Science and Technology",
             "Clear Water Bay"
@@ -3847,6 +4075,8 @@
         "name": "9332-variational-temporal-abstraction",
         "code": true,
         "affiliations": [
+            "Mila",
+            "Rutgers University",
             "Rutgers University"
         ]
     },
@@ -3893,7 +4123,7 @@
         "code": true,
         "affiliations": [
             "IBM Research",
-            "CNRS & Sorbonne Universite",
+            "CNRS & Sorbonne Universit",
             "Ecole Polytechnique"
         ]
     },
@@ -3967,6 +4197,7 @@
         "name": "9329-global-guarantees-for-blind-demodulation-with-generative-priors",
         "code": true,
         "affiliations": [
+            "College of Computer Science and Information",
             "Northeastern University",
             "University of British Columbia"
         ]
@@ -3976,6 +4207,7 @@
         "code": false,
         "affiliations": [
             "UChicago",
+            "Caltech",
             "Caltech"
         ]
     },
@@ -3983,6 +4215,7 @@
         "name": "9320-provable-non-linear-inductive-matrix-completion",
         "code": true,
         "affiliations": [
+            "Amazon",
             "Microsoft",
             "University of Washington",
             "Amazon & University of Texas"
@@ -4000,7 +4233,12 @@
     {
         "name": "9323-personalizing-many-decisions-with-high-dimensional-covariates",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Graduate School of Business",
+            "Stanford University",
+            "Department of Statistics",
+            "Stanford University"
+        ]
     },
     {
         "name": "9321-communication-efficient-distributed-blockwise-momentum-sgd-with-error-feedback",
@@ -4008,6 +4246,7 @@
         "affiliations": [
             "Department of Computer Science and Engineering",
             "Hong Kong University of Science and Technology",
+            "Amazon Web Services",
             "Amazon Web Services"
         ]
     },
@@ -4109,7 +4348,14 @@
     {
         "name": "9309-neural-temporal-difference-learning-converges-to-global-optima",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Department of Electronic Engineering",
+            "Princeton University",
+            "Department of Operations Research and Financial Engineering",
+            "Princeton University",
+            "Department of Industrial Engineering and Management Sciences",
+            "Northwestern University"
+        ]
     },
     {
         "name": "9308-demystifying-black-box-models-with-symbolic-metamodels",
@@ -4139,7 +4385,8 @@
             "Brain Team",
             "University of California Santa Cruz",
             "Google Research",
-            "Brain Team"
+            "Brain Team",
+            "Simons Institute for the Theory of Computing"
         ]
     },
     {
@@ -4178,6 +4425,7 @@
             "Northeastern University",
             "Caltech",
             "Salesforce",
+            "Caltech",
             "Caltech",
             "Caltech"
         ]
@@ -4264,6 +4512,7 @@
         "name": "9297-levenshtein-transformer",
         "code": true,
         "affiliations": [
+            "Junbo",
             "Facebook AI Research",
             "New York University",
             "cid:5)Tigerobo Inc."
@@ -4326,6 +4575,8 @@
         "name": "9290-unified-sample-optimal-property-estimation-in-near-linear-time",
         "code": false,
         "affiliations": [
+            "Electrical and Computer Engineering",
+            "Electrical and Computer Engineering",
             "University of California",
             "University of California"
         ]
@@ -4369,7 +4620,9 @@
     {
         "name": "9285-maxgap-bandit-adaptive-algorithms-for-approximate-ranking",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Amazon"
+        ]
     },
     {
         "name": "9282-information-theoretic-generalization-bounds-for-sgld-via-data-dependent-estimates",
@@ -4404,6 +4657,7 @@
         "affiliations": [
             "Google Research",
             "Brain Team",
+            "Mila",
             "University of Montreal",
             "University of Illinois",
             "Urbana Champaign",
@@ -4431,14 +4685,16 @@
         "affiliations": [
             "IBM Research,1 MIT",
             "IBM Watson",
-            "Lab,2 Center for Computational Health3"
+            "Lab,2 Center for Computational Health"
         ]
     },
     {
         "name": "9276-break-the-ceiling-stronger-multi-scale-deep-graph-convolutional-networks",
         "code": true,
         "affiliations": [
-            "McGill University"
+            "McGill University",
+            "Mila",
+            "DeepMind"
         ]
     },
     {
@@ -4511,7 +4767,8 @@
             "Barcelona Supercomputing Center",
             "Montr\u00e9al Institute for Learning Algorithms",
             "Universit\u00e9 de Montr\u00e9al",
-            "CIFAR"
+            "CIFAR",
+            "Salesforce Research"
         ]
     },
     {
@@ -4529,7 +4786,12 @@
     {
         "name": "9269-superposition-of-many-models-into-one",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "BAIR",
+            "BAIR",
+            "BAIR",
+            "BAIR"
+        ]
     },
     {
         "name": "9268-random-projections-with-asymmetric-quantization",
@@ -4555,7 +4817,7 @@
         "name": "9262-cross-modal-learning-with-adversarial-samples",
         "code": true,
         "affiliations": [
-            "School of Electronic Engineering",
+            "of Electronic Engineering",
             "Xidian University",
             "Electrical and Computer Engineering",
             "University of Pittsburgh",
@@ -4574,13 +4836,15 @@
             "Vector Institute",
             "Department of Statistical Sciences",
             "University of Toronto",
-            "Vector Institute"
+            "Vector Institute",
+            "PAC"
         ]
     },
     {
         "name": "9265-program-synthesis-and-semantic-parsing-with-learned-code-idioms",
         "code": true,
         "affiliations": [
+            "Microsoft Research",
             "Microsoft Research"
         ]
     },
@@ -4773,7 +5037,14 @@
             "RIKEN AIP",
             "NEC Corporation",
             "Keio University",
-            "National Institute of Informatics"
+            "National Institute of Informatics",
+            "JSPS",
+            "JST",
+            "PRESTO",
+            "JST",
+            "ACT",
+            "JST",
+            "ERATO"
         ]
     },
     {
@@ -4788,7 +5059,10 @@
     {
         "name": "9240-large-scale-adversarial-representation-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind"
+        ]
     },
     {
         "name": "9241-g2sat-learning-to-generate-sat-formulas",
@@ -4803,7 +5077,12 @@
     {
         "name": "9242-neural-trust-regionproximal-policy-optimization-attains-globally-optimal-policy",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Northwestern University",
+            "Princeton University",
+            "Northwestern University",
+            "Northwestern University"
+        ]
     },
     {
         "name": "9239-sample-complexity-of-learning-mixture-of-sparse-linear-regressions",
@@ -4825,7 +5104,10 @@
     {
         "name": "9238-unsupervised-curricula-for-visual-meta-reinforcement-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "\u03b1UC Berkeley \u03b2University",
+            "Toronto \u03b3Carnegie Mellon University \u03b4Stanford University"
+        ]
     },
     {
         "name": "9237-learning-robust-global-representations-by-penalizing-local-predictive-power",
@@ -4841,7 +5123,8 @@
         "affiliations": [
             "University of Wisconsin",
             "University of California",
-            "University of California"
+            "University of California",
+            "Google Research"
         ]
     },
     {
@@ -4917,7 +5200,11 @@
     {
         "name": "9229-statistical-computational-tradeoff-in-single-index-models",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Northwestern University",
+            "Princeton University",
+            "Northwestern University"
+        ]
     },
     {
         "name": "9225-keeping-your-distance-solving-sparse-reward-tasks-using-self-balancing-shaped-rewards",
@@ -4969,7 +5256,8 @@
             "Princeton University",
             "Department of Computer Science & Engineering",
             "The Ohio State University",
-            "Princeton"
+            "Princeton",
+            "Simons Institute for the Theory of Computing"
         ]
     },
     {
@@ -5082,7 +5370,9 @@
             "State College",
             "Department of Statistics",
             "Pennsylvania State University",
-            "State College"
+            "State College",
+            "NSF DMS",
+            "Simons Institute for the"
         ]
     },
     {
@@ -5118,7 +5408,9 @@
             "Department of Statistics",
             "Pennsylvania State University",
             "Department of Statistics",
-            "Pennsylvania State University"
+            "Pennsylvania State University",
+            "NSF DMS",
+            "Simons Institute for the"
         ]
     },
     {
@@ -5170,6 +5462,8 @@
         "name": "9200-decentralized-sketching-of-low-rank-matrices",
         "code": true,
         "affiliations": [
+            "Electrical and Computer Engineering",
+            "Electrical and Computer Engineering",
             "Ohio State University",
             "Georgia Institute of Technology",
             "University of Illinois",
@@ -5338,9 +5632,9 @@
         "name": "9183-residual-flows-for-invertible-generative-modeling",
         "code": true,
         "affiliations": [
-            "University of Toronto1",
-            "University of Bremen2",
-            "Vector Institute3"
+            "University of Toronto",
+            "University of Bremen",
+            "Vector Institute"
         ]
     },
     {
@@ -5351,7 +5645,11 @@
     {
         "name": "9180-stochastic-variance-reduced-primal-dual-algorithms-for-empirical-composition-optimization",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Tencent AI Lab",
+            "Department of Electrical and Computer Engineering",
+            "University of Florida"
+        ]
     },
     {
         "name": "9177-neural-jump-stochastic-differential-equations",
@@ -5374,7 +5672,9 @@
             "Georgia Tech",
             "Institute for Data and Decision Analytics",
             "Chinese University of Hong Kong",
-            "Shenzhen Institute of Artificial Intelligence and Robotics for Society"
+            "Shenzhen Institute of Artificial Intelligence and Robotics for Society",
+            "College of Computing",
+            "Georgia Institute of Technology"
         ]
     },
     {
@@ -5469,7 +5769,8 @@
         "code": true,
         "affiliations": [
             "School of Operations Research and Information Engineering",
-            "Cornell University"
+            "Cornell University",
+            "Staff Data Scientist"
         ]
     },
     {
@@ -5499,7 +5800,10 @@
             "Computer Science",
             "UIUC",
             "AWS AI Labs",
-            "Amazon.com Services , Inc."
+            "Amazon.com Services , Inc.",
+            "YW",
+            "YM",
+            "Amazon AWS AI Labs"
         ]
     },
     {
@@ -5541,7 +5845,7 @@
         "code": true,
         "affiliations": [
             "NVIDIA1 University",
-            "McGill University4 Aalto University5"
+            "McGill University4 Aalto University"
         ]
     },
     {
@@ -5639,7 +5943,8 @@
         "code": true,
         "affiliations": [
             "IBM Research & MIT",
-            "IBM Watson AI"
+            "IBM Watson AI",
+            "Facebook AI Research"
         ]
     },
     {
@@ -5679,7 +5984,10 @@
             "Cornell University",
             "Google Research",
             "Department of Computer Science",
-            "Carnegie Mellon University"
+            "Carnegie Mellon University",
+            "Google Research",
+            "Simons Institute for the Theory of Computing",
+            "Google Research"
         ]
     },
     {
@@ -5708,7 +6016,8 @@
         "name": "9139-language-as-an-abstraction-for-hierarchical-deep-reinforcement-learning",
         "code": true,
         "affiliations": [
-            "Google Research"
+            "Google Research",
+            "Goolge AI Residency"
         ]
     },
     {
@@ -5762,7 +6071,6 @@
         "code": true,
         "affiliations": [
             "INRIA",
-            "D\u00e9partement dInformatique de l\u00c9cole Normale Sup\u00e9rieure",
             "PSL Research University"
         ]
     },
@@ -5781,18 +6089,20 @@
         "code": true,
         "affiliations": [
             "SequeL",
-            "INRIA Lille Nord Europe",
+            "INRIA Lille",
             "Microsoft Research",
             "SequeL",
-            "INRIA Lille Nord Europe",
+            "INRIA Lille",
             "SequeL",
-            "INRIA Lille Nord Europe",
+            "INRIA Lille",
             "Renault Group",
             "Orange Labs",
             "Google Research",
             "Brain Team",
             "SequeL",
-            "INRIA Lille Nord Europe"
+            "INRIA Lille",
+            "CNRS",
+            "Centrale Lille"
         ]
     },
     {
@@ -5835,7 +6145,9 @@
     {
         "name": "9129-discovery-of-useful-questions-as-auxiliary-tasks",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "University of Michigan"
+        ]
     },
     {
         "name": "9132-correlation-clustering-with-local-objectives",
@@ -5845,7 +6157,10 @@
     {
         "name": "9134-algorithmic-analysis-and-statistical-estimation-of-slope-via-approximate-message-passing",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Department of Statistics",
+            "University of Pennsylvania"
+        ]
     },
     {
         "name": "9130-sinkhorn-barycenters-with-free-support-via-frank-wolfe-algorithm",
@@ -5865,6 +6180,7 @@
         "affiliations": [
             "Stanford University",
             "Stanford University",
+            "Google Brain",
             "Google Brain",
             "Google Brain"
         ]
@@ -5914,7 +6230,8 @@
         "name": "9119-preference-based-batch-and-sequential-teaching-towards-a-unified-view-of-models",
         "code": false,
         "affiliations": [
-            "Max Planck Institute for Software Systems",
+            "Max Planck Institute",
+            "Software Systems",
             "MPI",
             "SWS",
             "University of Chicago",
@@ -5959,7 +6276,9 @@
             "Harvard University",
             "Harvard University",
             "School of Engineering and Applied Science",
-            "Harvard University"
+            "Harvard University",
+            "NSF",
+            "CCF"
         ]
     },
     {
@@ -6003,7 +6322,9 @@
             "Department of Mathematical Sciences",
             "Carnegie Mellon University",
             "Machine Learning Department",
-            "Carnegie Mellon University"
+            "Carnegie Mellon University",
+            "IPM",
+            "Google"
         ]
     },
     {
@@ -6094,9 +6415,13 @@
         "name": "9101-neural-multisensory-scene-inference",
         "code": true,
         "affiliations": [
+            "Mila",
             "Universit\u00e9 de Montr\u00e9al",
             "Polytechnique Montr\u00e9al",
-            "Rutgers University"
+            "Rutgers University",
+            "JHL",
+            "Element AI",
+            "SA"
         ]
     },
     {
@@ -6145,7 +6470,8 @@
             "CMU",
             "Strategic Machine , Inc.",
             "Strategy Robot , Inc.",
-            "Optimized Markets , Inc."
+            "Optimized Markets , Inc.",
+            "arXiv"
         ]
     },
     {
@@ -6155,6 +6481,7 @@
             "Google Research & Harvard University",
             "Columbia University",
             "Columbia University",
+            "Harvard University",
             "Harvard University"
         ]
     },
@@ -6232,6 +6559,7 @@
         "affiliations": [
             "College of Information and Computer Science",
             "University of Massachusetts",
+            "VinAI",
             "College of Information and Computer Science",
             "University of Massachusetts"
         ]
@@ -6275,8 +6603,7 @@
         "name": "9086-surrogate-objectives-for-batch-policy-optimization-in-one-step-decision-making",
         "code": true,
         "affiliations": [
-            "University of Alberta",
-            "Google"
+            "University of Alberta"
         ]
     },
     {
@@ -6316,7 +6643,7 @@
         "name": "9077-latent-distance-estimation-for-random-geometric-graphs",
         "code": true,
         "affiliations": [
-            "Laboratoire de Math\u00e9matiques dOrsay",
+            "Laboratoire de Math\u00e9matiques",
             "LMO",
             "Sud",
             "\u00c9cole Centrale de Lyon"
@@ -6345,9 +6672,14 @@
         "name": "9081-unsupervised-state-representation-learning-in-atari",
         "code": true,
         "affiliations": [
+            "Mila",
+            "Microsoft Research",
+            "Mila",
+            "Mila",
+            "Mila",
             "Microsoft Research",
             "Microsoft Research",
-            "Microsoft Research"
+            "Mila"
         ]
     },
     {
@@ -6369,7 +6701,8 @@
         "code": true,
         "affiliations": [
             "Google Research",
-            "Carnegie Mellon University"
+            "Carnegie Mellon University",
+            "Google"
         ]
     },
     {
@@ -6458,12 +6791,24 @@
     {
         "name": "9067-learning-to-screen",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Princeton University",
+            "Aviv University",
+            "Google Research",
+            "Aviv University",
+            "Google Research",
+            "Ilan University",
+            "Google Research",
+            "Israel Inst",
+            "Google Research"
+        ]
     },
     {
         "name": "9068-a-communication-efficient-stochastic-multi-block-alternating-direction-method-of-multipliers",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Amazon"
+        ]
     },
     {
         "name": "9065-visualizing-and-measuring-the-geometry-of-bert",
@@ -6485,18 +6830,23 @@
     {
         "name": "9061-large-memory-layers-with-product-keys",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "UPMC Univ Paris",
+            "UMR",
+            "LIP",
+            "Facebook AI Research"
+        ]
     },
     {
         "name": "9090-retrosynthesis-prediction-with-conditional-graph-logic-network",
         "code": true,
         "affiliations": [
             "Google Research",
-            "Brain Team",
             "Galixir Inc.",
             "Massachusetts Institute of Technology",
             "Georgia Institute of Technology",
-            "\u0000Ant Financial"
+            "\u0000Ant Financial",
+            "Georgia Institute of Technology"
         ]
     },
     {
@@ -6526,7 +6876,8 @@
         "name": "9063-wide-neural-networks-of-any-depth-evolve-as-linear-models-under-gradient-descent",
         "code": true,
         "affiliations": [
-            "Google Brain"
+            "Google Brain",
+            "Google AI Residency"
         ]
     },
     {
@@ -6564,6 +6915,7 @@
             "Stanford University",
             "Google Research",
             "Brain Team",
+            "New York University",
             "New York University"
         ]
     },
@@ -6629,7 +6981,10 @@
             "Department of Electrical Engineering",
             "Colorado School of Mines",
             "Department of Electrical Engineering",
-            "Colorado School of Mines"
+            "Colorado School of Mines",
+            "ZZ",
+            "Department of Electrical & Computer Engineering",
+            "University of"
         ]
     },
     {
@@ -6803,7 +7158,8 @@
             "University of Illinois",
             "College of Computing",
             "Georgia Institute of Technology",
-            "U.S. Army Research Laboratory"
+            "U.S. Army Research Laboratory",
+            "Google Research"
         ]
     },
     {
@@ -6841,7 +7197,9 @@
             "University of Toronto",
             "Vector Institute",
             "Google Research",
-            "Brain Team"
+            "Brain Team",
+            "DeepMind",
+            "Google Student Researcher Program"
         ]
     },
     {
@@ -6856,13 +7214,20 @@
         "name": "9024-a-structured-prediction-approach-for-generalization-in-cooperative-multi-agent-reinforcement-learning",
         "code": true,
         "affiliations": [
-            "Facebook"
+            "Facebook",
+            "StarCraft",
+            "Blizzard EntertainmentTM"
         ]
     },
     {
         "name": "9025-on-exact-computation-with-an-infinitely-wide-neural-net",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Princeton University",
+            "Princeton University",
+            "Princeton University",
+            "Institute for Advanced Study"
+        ]
     },
     {
         "name": "9027-chirality-nets-for-human-pose-regression",
@@ -6902,9 +7267,9 @@
         "name": "9020-fast-convergence-of-natural-gradient-descent-for-over-parameterized-neural-networks",
         "code": false,
         "affiliations": [
-            "University of Toronto1",
-            "Vector Institute2",
-            "DeepMind3"
+            "University of Toronto",
+            "Vector Institute",
+            "DeepMind"
         ]
     },
     {
@@ -6963,6 +7328,7 @@
         "name": "9016-stability-of-graph-scattering-transforms",
         "code": true,
         "affiliations": [
+            "Electrical and Systems Eng",
             "Courant Institute of Math",
             "New York University",
             "University of Pennsylvania",
@@ -6994,7 +7360,8 @@
             "Department of ECE",
             "Stevens Institute of Technology",
             "Stevens Institute of Technology",
-            "Department of ECE"
+            "Department of ECE",
+            "Amazon"
         ]
     },
     {
@@ -7079,9 +7446,8 @@
         "name": "9008-post-training-4-bit-quantization-of-convolutional-networks-for-rapid-deployment",
         "code": true,
         "affiliations": [
-            "Intel Artificial Intelligence Products Group",
-            "AIPG)1",
-            "Technion Israel Institute of Technology2"
+            "Artificial Intelligence Products Group",
+            "Israel Institute of Technology"
         ]
     },
     {
@@ -7095,7 +7461,9 @@
     {
         "name": "9001-a-unified-bellman-optimality-principle-combining-reward-maximization-and-empowerment",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "PROWLER.io"
+        ]
     },
     {
         "name": "9000-detecting-overfitting-via-adversarial-examples",
@@ -7125,7 +7493,10 @@
             "Oregon State University",
             "University of Florida",
             "Department of Elect . & Computer Eng",
-            "Department of Computing & Info"
+            "Department of Computing & Info",
+            "National Science Foundation",
+            "ECCS",
+            "NSF"
         ]
     },
     {
@@ -7164,6 +7535,7 @@
         "code": true,
         "affiliations": [
             "CNRS",
+            "Centrale Lille",
             "Inria Lille"
         ]
     },
@@ -7233,9 +7605,10 @@
         "name": "8990-stochastic-runge-kutta-accelerates-langevin-monte-carlo-and-beyond",
         "code": false,
         "affiliations": [
-            "University of Toronto1",
-            "Vector Institute2",
-            "Microsoft Research3"
+            "University of Toronto",
+            "Vector Institute",
+            "Microsoft Research",
+            "O"
         ]
     },
     {
@@ -7294,12 +7667,18 @@
     {
         "name": "8981-continual-unsupervised-representation-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "8978-maven-multi-agent-variational-exploration",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Armenian University",
+            "Computer Science",
+            "University of Oxford"
+        ]
     },
     {
         "name": "8977-perspectivenet-a-scene-consistent-image-generator-for-new-view-synthesis-in-real-indoor-environments",
@@ -7315,7 +7694,8 @@
             "Mathematical Sciences",
             "California Institute of Technology",
             "Mathematical Sciences",
-            "California Institute of Technology"
+            "California Institute of Technology",
+            "Liu et al"
         ]
     },
     {
@@ -7410,6 +7790,7 @@
             "Department of Electrical Engineering",
             "Pennsylvania State University",
             "Department of Electrical Engineering",
+            "Princeton University",
             "Princeton University"
         ]
     },
@@ -7444,7 +7825,8 @@
         "code": false,
         "affiliations": [
             "School of Informatics",
-            "University of Edinburgh"
+            "University of Edinburgh",
+            "Skipgram"
         ]
     },
     {
@@ -7469,7 +7851,8 @@
             "Department of Computer Science",
             "University of T\u00fcbingen",
             "Max Planck Institute",
-            "Intelligent Systems"
+            "Intelligent Systems",
+            "University of T\u00fcbingen"
         ]
     },
     {
@@ -7500,7 +7883,8 @@
             "CSAIL",
             "MIT",
             "University of Wisconsin",
-            "Tsinghua University"
+            "Tsinghua University",
+            "MIT"
         ]
     },
     {
@@ -7517,12 +7901,16 @@
         "code": true,
         "affiliations": [
             "ESAT",
+            "STADIUS",
             "KU LEUVEN",
             "ESAT",
+            "STADIUS",
             "KU LEUVEN",
             "ESAT",
+            "STADIUS",
             "KU LEUVEN",
             "ESAT",
+            "STADIUS",
             "KU LEUVEN"
         ]
     },
@@ -7635,7 +8023,9 @@
         "name": "8944-toward-a-characterization-of-loss-functions-for-distribution-learning",
         "code": false,
         "affiliations": [
-            "Cornell University"
+            "Cornell University",
+            "Microsoft Research",
+            "Microsoft Research"
         ]
     },
     {
@@ -7689,7 +8079,8 @@
             "Universit\u00e9 de Toulouse",
             "French Aerospace Lab",
             "Universit\u00e9 de Toulouse",
-            "ISAE"
+            "ISAE",
+            "SUPAERO"
         ]
     },
     {
@@ -7724,7 +8115,8 @@
         "name": "8936-tensor-monte-carlo-particle-methods-for-the-gpu-era",
         "code": true,
         "affiliations": [
-            "University of Bristol"
+            "University of Bristol",
+            "Janelia Research Campus"
         ]
     },
     {
@@ -7754,6 +8146,7 @@
             "CNRS",
             "Thales",
             "Universit\u00e9 Paris",
+            "Mila",
             "Canadian Institute for Advanced Research"
         ]
     },
@@ -7794,8 +8187,8 @@
         "name": "8932-are-sample-means-in-multi-armed-bandits-positively-or-negatively-biased",
         "code": true,
         "affiliations": [
-            "Department of Statistics and Data Science1",
-            "Machine Learning Department2",
+            "Department of Statistics and Data Science",
+            "Machine Learning Department",
             "Carnegie Mellon University"
         ]
     },
@@ -7847,7 +8240,7 @@
         "code": true,
         "affiliations": [
             "Shanghai University of Finance",
-            "Economics1",
+            "Economics",
             "University of North Carolina",
             "AI Labs"
         ]
@@ -7916,13 +8309,15 @@
             "Tencent AI Lab",
             "University of Rochester",
             "University of Rochester & Kwai Inc.",
-            "Peking University"
+            "Peking University",
+            "Tencent AI Lab"
         ]
     },
     {
         "name": "8943-depth-first-proof-number-search-with-heuristic-edge-cost-and-application-to-chemical-synthesis-planning",
         "code": false,
         "affiliations": [
+            "IBM Research",
             "IBM Research",
             "IBM Research",
             "IBM Research"
@@ -7933,6 +8328,7 @@
         "code": true,
         "affiliations": [
             "CREST",
+            "ENSAE",
             "Google Brain",
             "CREST",
             "ENSAE"
@@ -7994,7 +8390,8 @@
             "UBTECH Sydney AI Centre",
             "School of Computer Science",
             "Faculty of Engineering",
-            "University of Sydney"
+            "University of Sydney",
+            "LFOICA"
         ]
     },
     {
@@ -8055,7 +8452,8 @@
         "affiliations": [
             "Amazon Research",
             "Amazon Research",
-            "Ghent University"
+            "Ghent University",
+            "Amazon Research"
         ]
     },
     {
@@ -8140,6 +8538,7 @@
         "code": true,
         "affiliations": [
             "University of Oxford",
+            "DeepMind",
             "Imperial College London",
             "Heriot",
             "Watt University"
@@ -8159,7 +8558,8 @@
         "code": false,
         "affiliations": [
             "Google Research",
-            "New York University"
+            "New York University",
+            "Google Zurich"
         ]
     },
     {
@@ -8199,14 +8599,16 @@
             "Criteo AI Lab",
             "Criteo AI Lab",
             "ENSAE ParisTech",
-            "Criteo AI Lab"
+            "Criteo AI Lab",
+            "Google"
         ]
     },
     {
         "name": "8892-fast-autoaugment",
         "code": true,
         "affiliations": [
-            "UNIST"
+            "UNIST",
+            "Kakao Brain"
         ]
     },
     {
@@ -8216,6 +8618,7 @@
             "National Laboratory of Pattern Recognition",
             "Institute of Automation",
             "Chinese Academy of Sciences",
+            "Megvii Technology",
             "Megvii Technology"
         ]
     },
@@ -8223,7 +8626,8 @@
         "name": "8891-stochastic-proximal-langevin-algorithm-potential-splitting-and-nonasymptotic-rates",
         "code": true,
         "affiliations": [
-            "King Abdullah University of Science and Technology"
+            "King Abdullah University of Science and Technology",
+            "Moscow Institute of Physics and Technology"
         ]
     },
     {
@@ -8296,7 +8700,6 @@
         "name": "8883-code-generation-as-a-dual-task-of-code-summarization",
         "code": true,
         "affiliations": [
-            "Key Laboratory",
             "High Confidence Software Technologies",
             "Peking University",
             "Ministry of Education",
@@ -8311,6 +8714,7 @@
         "code": false,
         "affiliations": [
             "University of Waterloo",
+            "Microsoft Research",
             "Microsoft Research"
         ]
     },
@@ -8352,7 +8756,13 @@
     {
         "name": "8894-interval-timing-in-deep-reinforcement-learning-agents",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
+        ]
     },
     {
         "name": "8876-maximum-mean-discrepancy-gradient-flow",
@@ -8507,7 +8917,10 @@
     {
         "name": "8862-reliable-training-and-estimation-of-variance-networks",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Cognitive Systems",
+            "Technical University of Denmark"
+        ]
     },
     {
         "name": "8861-neural-machine-translation-with-soft-prototype",
@@ -8516,7 +8929,8 @@
             "University of Illinois",
             "Microsoft Research",
             "Institute of Computing Technology",
-            "Chinese Academy of Sciences"
+            "Chinese Academy of Sciences",
+            "Microsoft Research Asia"
         ]
     },
     {
@@ -8568,7 +8982,10 @@
             "EURECOM",
             "University of T\u00fcbingen",
             "Max Planck Institute",
-            "Intelligent Systems"
+            "Intelligent Systems",
+            "MK",
+            "University of T\u00fcbingen",
+            "MPI IS"
         ]
     },
     {
@@ -8601,7 +9018,8 @@
             "Tsinghua University",
             "Microsoft Research",
             "Microsoft Research",
-            "Tsinghua University"
+            "Tsinghua University",
+            "Microsoft Research"
         ]
     },
     {
@@ -8611,7 +9029,8 @@
             "KAIST",
             "POSTECH",
             "KAIST",
-            "AItrics"
+            "AItrics",
+            "Kakao Brain"
         ]
     },
     {
@@ -8620,6 +9039,7 @@
         "affiliations": [
             "Microsoft Research",
             "Tsinghua University",
+            "Microsoft Research",
             "Microsoft Research",
             "Microsoft Research",
             "Microsoft Research"
@@ -8651,9 +9071,8 @@
         "name": "8845-compositional-de-attention-networks",
         "code": true,
         "affiliations": [
-            "cid:91)Nanyang Technological University",
-            "Microsoft Dynamics",
-            "AI Research"
+            "Technological University",
+            "Microsoft Dynamics"
         ]
     },
     {
@@ -8694,13 +9113,18 @@
             "Huya AI",
             "Chinese University of Hong Kong",
             "Tencent AI Lab",
-            "Hong Kong University of Science and Technology"
+            "Hong Kong University of Science and Technology",
+            "Tencent AI Lab"
         ]
     },
     {
         "name": "8841-dynamic-ensemble-modeling-approach-to-nonstationary-neural-decoding-in-brain-computer-interfaces",
         "code": false,
         "affiliations": [
+            "College of Computer Science and Technology",
+            "Zhejiang University",
+            "School of Computer Science",
+            "Nanjing University of Posts and Telecommunications",
             "Qiushi Academy",
             "Advanced Studies",
             "Zhejiang University",
@@ -8788,7 +9212,10 @@
     {
         "name": "8833-autoassist-a-framework-to-accelerate-training-of-deep-neural-networks",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Amazon",
+            "University of Texas"
+        ]
     },
     {
         "name": "8834-dfnets-spectral-cnns-for-graphs-with-feedback-looped-filters",
@@ -8822,14 +9249,21 @@
     {
         "name": "8827-equipping-expertsbandits-with-long-term-memory",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "University of Wisconsin",
+            "University of Southern California",
+            "Center for Data Science",
+            "Peking University",
+            "Key Laboratory",
+            "Peking University"
+        ]
     },
     {
         "name": "8831-deep-active-learning-with-a-neural-architecture-search",
         "code": true,
         "affiliations": [
-            "Technion Israel Institute of Technology",
-            "Technion Israel Institute of Technology"
+            "Israel Institute of Technology",
+            "Israel Institute of Technology"
         ]
     },
     {
@@ -8957,7 +9391,8 @@
         "affiliations": [
             "Georgia Institute of Technology",
             "OffWorld Inc.",
-            "University of California"
+            "University of California",
+            "OffWorld Inc. Correspondence"
         ]
     },
     {
@@ -9095,7 +9530,9 @@
             "College of Intelligence and Computing",
             "Tianjin University",
             "ReLER",
-            "University of Technology"
+            "University of Technology",
+            "ReLER Lab",
+            "UTS"
         ]
     },
     {
@@ -9103,7 +9540,8 @@
         "code": true,
         "affiliations": [
             "Alibaba Group",
-            "Tsinghua University"
+            "Tsinghua University",
+            "Alibaba"
         ]
     },
     {
@@ -9111,8 +9549,7 @@
         "code": true,
         "affiliations": [
             "Department of Computer Science",
-            "University of Alberta",
-            "Google Brain"
+            "University of Alberta"
         ]
     },
     {
@@ -9133,7 +9570,8 @@
         "affiliations": [
             "IBM Research AI",
             "Computer Sciences",
-            "University of Wisconsin"
+            "University of Wisconsin",
+            "IBM Research"
         ]
     },
     {
@@ -9170,7 +9608,9 @@
         "code": true,
         "affiliations": [
             "Columbia University",
-            "Microsoft Research"
+            "Microsoft Research",
+            "Tsinghua University",
+            "Microsoft Research Asia"
         ]
     },
     {
@@ -9203,6 +9643,7 @@
         "affiliations": [
             "Preferred Networks",
             "University of Tokyo",
+            "Preferred Networks",
             "Preferred Networks",
             "Preferred Networks"
         ]
@@ -9313,7 +9754,13 @@
         "affiliations": [
             "University of Southern California",
             "Google Brain",
-            "University of British Columbia"
+            "QC",
+            "University of British Columbia",
+            "Mila",
+            "QC",
+            "Mila",
+            "QC",
+            "Mila"
         ]
     },
     {
@@ -9357,6 +9804,7 @@
         "affiliations": [
             "Sieg University of Applied Sciences",
             "Universit\u00e9 de Lorraine",
+            "Google Brain",
             "Google Brain"
         ]
     },
@@ -9367,7 +9815,6 @@
             "Yale University",
             "Yale University",
             "University of Haifa",
-            "ETH Zurich",
             "Yale University"
         ]
     },
@@ -9382,7 +9829,12 @@
     {
         "name": "8772-balancing-efficiency-and-fairness-in-on-demand-ridesourcing",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Department of Industrial and Enterprise Systems Engineering",
+            "University of Illinois",
+            "Department of Mathematical Sciences",
+            "Nanyang Technological University"
+        ]
     },
     {
         "name": "8774-deep-rgb-d-canonical-correlation-analysis-for-sparse-depth-completion",
@@ -9483,7 +9935,8 @@
             "CMU",
             "Strategic Machine , Inc.",
             "Strategy Robot , Inc.",
-            "Optimized Markets , Inc."
+            "Optimized Markets , Inc.",
+            "arXiv"
         ]
     },
     {
@@ -9524,7 +9977,8 @@
             "CMU",
             "Strategic Machine , Inc.",
             "Strategy Robot , Inc.",
-            "Optimized Markets , Inc."
+            "Optimized Markets , Inc.",
+            "arXiv"
         ]
     },
     {
@@ -9619,8 +10073,8 @@
         "name": "8750-multivariate-triangular-quantile-maps-for-novelty-detection",
         "code": true,
         "affiliations": [
-            "University of Waterloo1",
-            "National Research Council Canada2"
+            "University of Waterloo",
+            "National Research Council Canada"
         ]
     },
     {
@@ -9642,14 +10096,14 @@
         "name": "8748-ordered-memory",
         "code": true,
         "affiliations": [
-            "Universite de Montreal",
-            "Universite de Montreal",
-            "Universite de Montreal",
+            "Mila",
+            "Mila",
+            "Mila",
             "Microsoft Research",
             "Microsoft Research",
-            "Universite de Montreal",
+            "Mila",
             "Microsoft Research",
-            "Universite de Montreal"
+            "Mila"
         ]
     },
     {
@@ -9673,6 +10127,7 @@
         "code": true,
         "affiliations": [
             "Georgia Institute of Technology",
+            "Mila",
             "Universit\u00e9 de Montr\u00e9al",
             "Ant Financial"
         ]
@@ -9735,7 +10190,8 @@
             "Google Research",
             "Google Research",
             "Google Research",
-            "Google Research"
+            "Google Research",
+            "Google"
         ]
     },
     {
@@ -9771,6 +10227,7 @@
         "name": "8730-think-globally-act-locally-a-deep-neural-network-approach-to-high-dimensional-time-series-forecasting",
         "code": true,
         "affiliations": [
+            "Amazon",
             "Amazon"
         ]
     },
@@ -9800,7 +10257,12 @@
     {
         "name": "8728-on-single-source-robustness-in-deep-fusion-models",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "University of Texas",
+            "University of Texas",
+            "University of Texas",
+            "Amazon"
+        ]
     },
     {
         "name": "8733-hyperbolic-graph-convolutional-neural-networks",
@@ -9821,6 +10283,7 @@
             "Element AI",
             "Element AI",
             "Element AI",
+            "Element AI",
             "Element AI"
         ]
     },
@@ -9836,7 +10299,10 @@
         "name": "8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks",
         "code": false,
         "affiliations": [
-            "IBM T. J. Watson Research Center"
+            "IBM T. J. Watson Research Center",
+            "IBM",
+            "Electrical Engineering Department",
+            "Hanyang"
         ]
     },
     {
@@ -9856,7 +10322,10 @@
     {
         "name": "8725-blocking-bandits",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Amazon",
+            "Amazon"
+        ]
     },
     {
         "name": "8719-rethinking-deep-neural-network-ownership-verification-embedding-passports-to-defeat-ambiguity-attacks",
@@ -9904,7 +10373,8 @@
             "University of Edinburgh",
             "School of Informatics",
             "School of Informatics",
-            "MITIBM Watson AI Lab",
+            "MIT",
+            "IBM Watson AI Lab",
             "Department of Informatics",
             "University of Oslo",
             "School of Informatics",
@@ -9916,7 +10386,8 @@
         "code": true,
         "affiliations": [
             "School of Operations Research and Information Engineering",
-            "Cornell University"
+            "Cornell University",
+            "Gamma , and Logistics"
         ]
     },
     {
@@ -9933,7 +10404,8 @@
         "name": "8717-when-does-label-smoothing-help",
         "code": false,
         "affiliations": [
-            "Google Brain"
+            "Google Brain",
+            "Google AI Residency"
         ]
     },
     {
@@ -9964,7 +10436,11 @@
         "affiliations": [
             "Sorbonne Universit\u00e9",
             "CNRS",
-            "CMAP"
+            "LIP",
+            "CMAP",
+            "ENS de Lyon",
+            "MLO",
+            "EPFL"
         ]
     },
     {
@@ -9984,7 +10460,6 @@
         "affiliations": [
             "Columbia University",
             "Columbia University",
-            "Charit\u00e9 Universit\u00e4tsmedizin Berlin",
             "Columbia University"
         ]
     },
@@ -10008,7 +10483,9 @@
     {
         "name": "8707-scalable-bayesian-dynamic-covariance-modeling-with-variational-wishart-and-inverse-wishart-processes",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "PROWLER.io"
+        ]
     },
     {
         "name": "8706-exploiting-local-and-global-structure-for-point-cloud-semantic-segmentation-with-contextual-point-representations",
@@ -10076,14 +10553,15 @@
             "Cornell University",
             "Haverford College",
             "University of Arizona",
-            "University of Utah"
+            "University of Utah",
+            "NSF"
         ]
     },
     {
         "name": "8701-partially-encrypted-deep-learning-using-functional-encryption",
         "code": true,
         "affiliations": [
-            "D\u00e9partement dinformatique de lENS",
+            "ENS",
             "ENS",
             "CNRS",
             "PSL University",
@@ -10102,7 +10580,8 @@
             "Alan Turing Institute",
             "Microsoft Research",
             "Wayve Technologies",
-            "Microsoft Research"
+            "Microsoft Research",
+            "Microsoft Research Cambridge"
         ]
     },
     {
@@ -10168,7 +10647,13 @@
     {
         "name": "8697-no-press-diplomacy-modeling-multi-agent-gameplay",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "University of Michigan",
+            "Mila",
+            "McGill University",
+            "Mila",
+            "University of Montreal"
+        ]
     },
     {
         "name": "8694-double-quantization-for-communication-efficient-distributed-optimization",
@@ -10263,6 +10748,7 @@
             "Link\u00f6ping University",
             "Department of Data Science",
             "EURECOM",
+            "PROWLER.io",
             "Cambridge"
         ]
     },
@@ -10280,7 +10766,9 @@
     {
         "name": "8682-training-language-gans-from-scratch",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "DeepMind"
+        ]
     },
     {
         "name": "8679-beyond-alternating-updates-for-matrix-factorization-with-inertial-bregman-proximal-gradient-algorithms",
@@ -10296,13 +10784,15 @@
         "name": "8678-efficient-graph-generation-with-graph-recurrent-attention-networks",
         "code": true,
         "affiliations": [
-            "University of Toronto1",
-            "Uber ATG Toronto2",
-            "Vector Institute3",
-            "Stanford University5",
-            "McGill University6",
-            "Mila Quebec Artificial Intelligence Institute7",
-            "Canadian Institute for Advanced Research8"
+            "University of Toronto",
+            "Uber ATG Toronto",
+            "Vector Institute",
+            "DeepMind",
+            "Stanford University",
+            "McGill University",
+            "Mila",
+            "Quebec Artificial Intelligence Institute",
+            "Canadian Institute for Advanced Research"
         ]
     },
     {
@@ -10326,7 +10816,10 @@
     {
         "name": "8675-curvilinear-distance-metric-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Institute for Medical Engineering & Science",
+            "Massachusetts Institute of Technology"
+        ]
     },
     {
         "name": "8680-learning-deep-bilinear-transformation-for-fine-grained-image-representation",
@@ -10335,7 +10828,8 @@
             "University of Science and Technology of China",
             "Hefei",
             "Microsoft Research",
-            "University of Rochester"
+            "University of Rochester",
+            "Microsoft Research"
         ]
     },
     {
@@ -10351,6 +10845,8 @@
         "name": "8671-learning-dynamic-polynomial-proofs",
         "code": false,
         "affiliations": [
+            "DeepMind",
+            "DeepMind",
             "University of Cambridge",
             "ENS Lyon"
         ]
@@ -10360,6 +10856,7 @@
         "code": true,
         "affiliations": [
             "EDF R&D",
+            "CEDRIC",
             "Conservatoire National des Arts et M\u00e9tiers"
         ]
     },
@@ -10391,7 +10888,8 @@
             "University of Guelph",
             "Vector Institute",
             "University of Guelph",
-            "Vector Institute"
+            "Vector Institute",
+            "SRI International"
         ]
     },
     {
@@ -10417,7 +10915,10 @@
     {
         "name": "8674-data-cleansing-for-models-trained-with-sgd",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "The University of Tokyo",
+            "Osaka University"
+        ]
     },
     {
         "name": "8666-full-gradient-representation-for-neural-network-visualization",
@@ -10444,7 +10945,8 @@
             "& Machine Learning Group",
             "University of Cambridge",
             "Google Research",
-            "Brain Team"
+            "Brain Team",
+            "Google"
         ]
     },
     {
@@ -10511,7 +11013,8 @@
         "affiliations": [
             "University of Zurich",
             "University of Chicago",
-            "University of Edinburgh"
+            "University of Edinburgh",
+            "SWS"
         ]
     },
     {
@@ -10571,6 +11074,7 @@
             "School of Software",
             "Tsinghua University",
             "Alibaba Group",
+            "Alibaba Group",
             "Alibaba Group"
         ]
     },
@@ -10617,7 +11121,9 @@
         "name": "8654-uncoupled-regression-from-pairwise-comparison-data",
         "code": true,
         "affiliations": [
-            "University of Tokyo"
+            "University of Tokyo",
+            "RIKEN",
+            "Gatsby Computational Neuroscience Unit"
         ]
     },
     {
@@ -10650,6 +11156,7 @@
             "Aalto University",
             "NVIDIA",
             "Aalto University",
+            "NVIDIA",
             "NVIDIA",
             "NVIDIA",
             "NVIDIA",
@@ -10816,16 +11323,22 @@
     {
         "name": "8628-coda-an-end-to-end-neural-program-decompiler",
         "code": false,
-        "affiliations": []
+        "affiliations": [
+            "Coda"
+        ]
     },
     {
         "name": "8630-painless-stochastic-gradient-interpolation-line-search-and-convergence-rates",
         "code": true,
         "affiliations": [
+            "Mila",
             "University of British Columbia",
             "University of British Columbia",
+            "Mila",
             "University of British Columbia",
-            "CCAI Affiliate"
+            "QBit",
+            "CCAI Affiliate",
+            "Mila"
         ]
     },
     {
@@ -10852,7 +11365,9 @@
             "School of Engineering and Technology",
             "University of Washington Tacoma",
             "Department of Computer Science",
-            "Ilan University"
+            "Ilan University",
+            "Computer Science , and Statistics",
+            "Ghent University"
         ]
     },
     {
@@ -10864,7 +11379,8 @@
             "Thomas J. Watson Research Center",
             "University of Connecticut",
             "Electrical and Computer Engineering",
-            "University of Connecticut"
+            "University of Connecticut",
+            "SG"
         ]
     },
     {
@@ -10874,7 +11390,9 @@
             "Department of Statistics",
             "University of Pennsylvania",
             "Department of Statistics",
-            "Stanford University"
+            "Stanford University",
+            "SL",
+            "Tsinghua University"
         ]
     },
     {
@@ -11185,7 +11703,8 @@
             "Carnegie Mellon University",
             "University of Michigan",
             "University of Michigan",
-            "Carnegie Mellon University"
+            "Carnegie Mellon University",
+            "NSF"
         ]
     },
     {
@@ -11211,29 +11730,36 @@
         "name": "8588-fully-dynamic-consistent-facility-location",
         "code": true,
         "affiliations": [
-            "CNRS & Sorbonne Universite",
+            "CNRS & Sorbonne Universit",
             "University of Copenhagen",
             "University of Copenhagen",
-            "Sorbonne Univeriste",
+            "Sorbonne Univerist",
             "Sapienza University of Rome"
         ]
     },
     {
         "name": "8590-a-flexible-generative-framework-for-graph-based-semi-supervised-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "EECS",
+            "University of Michigan",
+            "Department of Statistics",
+            "University of Michigan",
+            "School of Information",
+            "University of Michigan"
+        ]
     },
     {
         "name": "8583-implicit-regularization-of-discrete-gradient-dynamics-in-linear-neural-networks",
         "code": true,
         "affiliations": [
             "Mila & DIRO",
-            "Universite de Montreal",
             "INRIA",
-            "Ecole Normale Superieure",
+            "Ecole Normale Sup",
             "PSL Research University",
             "Mila & DIRO",
-            "Universite de Montreal"
+            "CIFAR",
+            "CIFAR AI"
         ]
     },
     {
@@ -11254,6 +11780,7 @@
             "New York University",
             "Facebook AI Research",
             "University of Washington",
+            "DeepMind",
             "Facebook AI Research",
             "New York University"
         ]
@@ -11297,6 +11824,7 @@
         "code": false,
         "affiliations": [
             "Massachusetts Institute of Technology",
+            "Google Brain",
             "Google Brain"
         ]
     },
@@ -11317,7 +11845,8 @@
         "name": "8579-backpropagation-friendly-eigendecomposition",
         "code": true,
         "affiliations": [
-            "Xian Jiaotong University"
+            "CVLab",
+            "Jiaotong University"
         ]
     },
     {
@@ -11346,7 +11875,9 @@
             "AI Project",
             "EPFL",
             "EPFL",
-            "Technical University of Denmark"
+            "Technical University of Denmark",
+            "RIKEN Center",
+            "AI"
         ]
     },
     {
@@ -11369,7 +11900,14 @@
     {
         "name": "8576-convergent-policy-optimization-for-safe-reinforcement-learning",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Industrial Engineering and Management Sciences",
+            "Northwestern University",
+            "University of Chicago Booth School of Business",
+            "Department of Operations Research and Financial Engineering",
+            "Princeton University",
+            "University of Chicago Booth School of Business"
+        ]
     },
     {
         "name": "8575-individual-regret-in-cooperative-nonstochastic-multi-armed-bandits",
@@ -11393,7 +11931,11 @@
         "affiliations": [
             "Indiana University",
             "Fudan University",
-            "Indiana University"
+            "Indiana University",
+            "School of Data Science",
+            "MOE Frontiers Center",
+            "Brain Science",
+            "Shanghai Key Lab"
         ]
     },
     {
@@ -11408,7 +11950,9 @@
         "name": "8571-real-time-reinforcement-learning",
         "code": true,
         "affiliations": [
-            "Universit\u00e9 de Montr\u00e9al"
+            "Mila",
+            "Universit\u00e9 de Montr\u00e9al",
+            "Mila"
         ]
     },
     {
@@ -11444,7 +11988,8 @@
         "code": true,
         "affiliations": [
             "Carnegie Mellon University University of California",
-            "Berkeley Peking University"
+            "Berkeley Peking University",
+            "Microsoft Research Asia"
         ]
     },
     {
@@ -11454,7 +11999,11 @@
             "University of Pennsylvania",
             "Google Research New York",
             "Microsoft Research Redmond",
-            "University of Minnesota"
+            "University of Minnesota",
+            "Microsoft Research New York",
+            "Warren Center",
+            "University of Pennsylvania",
+            "Microsoft Research Redmond"
         ]
     },
     {
@@ -11687,7 +12236,7 @@
         "name": "8541-quaternion-knowledge-graph-embeddings",
         "code": true,
         "affiliations": [
-            "University of New South Wales",
+            "University of",
             "\u03c8Nanyang Technological University"
         ]
     },
@@ -11750,7 +12299,7 @@
         "affiliations": [
             "Department of Computer Science",
             "The University of Iowa",
-            "Machine Intelligence Technology",
+            "Intelligence Technology",
             "Alibaba Group"
         ]
     },
@@ -11841,8 +12390,7 @@
         "name": "8525-positive-unlabeled-compression-on-the-cloud",
         "code": true,
         "affiliations": [
-            "Huawei Noahs Ark Lab",
-            "Key Laboratory of Machine Perception",
+            "Ark Lab",
             "MOE",
             "CMIC",
             "School of EECS",
@@ -11892,6 +12440,8 @@
         "code": false,
         "affiliations": [
             "University of Washington",
+            "DeepMind",
+            "Georgia Institute of Technology",
             "Georgia Institute of Technology"
         ]
     },
@@ -12118,7 +12668,7 @@
         "name": "8497-disentangled-behavioural-representations",
         "code": true,
         "affiliations": [
-            "Data61",
+            "Data6",
             "CSIRO McMaster University University of Chicago",
             "Australian National University University of Sydney Max Planck Institute"
         ]
@@ -12144,7 +12694,8 @@
             "Peng Cheng Laboratory",
             "University of Chinese Academy of Sciences",
             "National Tsing Hua University",
-            "Noahs Ark Lab",
+            "Noah",
+            "Ark Lab",
             "Huawei"
         ]
     },
@@ -12270,6 +12821,7 @@
         "affiliations": [
             "MechE & RLE",
             "MIT",
+            "MechE",
             "Physics & RLE",
             "MIT",
             "MechE & RLE",
@@ -12394,7 +12946,7 @@
         "name": "8467-meta-weight-net-learning-an-explicit-mapping-for-sample-weighting",
         "code": true,
         "affiliations": [
-            "Xian Jiaotong University",
+            "Jiaotong University",
             "Macau University of Science and Technology"
         ]
     },
@@ -12445,7 +12997,9 @@
             "Microsoft Research Cambridge",
             "University of California San Diego",
             "Microsoft Research Cambridge",
-            "Microsoft Research Cambridge"
+            "Microsoft Research Cambridge",
+            "Microsoft Research",
+            "Cambridge"
         ]
     },
     {
@@ -12473,6 +13027,7 @@
         "code": true,
         "affiliations": [
             "Horizon Robotics",
+            "Baidu Research",
             "Baidu Research"
         ]
     },
@@ -12485,7 +13040,7 @@
             "Yale University",
             "Genetics and Computer Science",
             "Yale University",
-            "Hal\u0131c\u0131oglu Data Science Institute",
+            "Hal\u0131c\u0131o  glu Data Science Institute",
             "University of California"
         ]
     },
@@ -12511,7 +13066,7 @@
         "code": true,
         "affiliations": [
             "School of Mathematics and Statistics",
-            "Xian Jiaotong University",
+            "Jiaotong University",
             "Department of Computing",
             "Hong Kong Polytechnic University",
             "Faculty of Information Technology",
@@ -12525,12 +13080,13 @@
         "code": true,
         "affiliations": [
             "Institute of Artificial Intelligence and Robotics",
-            "Xian Jiaotong Univeristy",
+            "Jiaotong Univeristy",
             "Institute of Automation",
             "Chinese Academy of Sciences",
             "University of Chinese Academy of Sciences",
             "Megvii Inc.",
-            "Face++"
+            "Face++",
+            "Megvii Research"
         ]
     },
     {
@@ -12621,7 +13177,11 @@
     {
         "name": "8441-a-new-defense-against-adversarial-images-turning-a-weakness-into-a-strength",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Department of Computer Science",
+            "Cornell University",
+            "Department of Computer"
+        ]
     },
     {
         "name": "8437-d-vae-a-variational-autoencoder-for-directed-acyclic-graphs",
@@ -12715,7 +13275,8 @@
             "Indian Institute of Science",
             "Bangalore",
             "Indian Institute of Science",
-            "Bangalore"
+            "Bangalore",
+            "Indian Institute of Science"
         ]
     },
     {
@@ -12739,7 +13300,7 @@
         "code": false,
         "affiliations": [
             "School of Mathematics and Statistics",
-            "Xian Jiaotong University"
+            "Jiaotong University"
         ]
     },
     {
@@ -12774,6 +13335,7 @@
         "name": "8422-multi-view-reinforcement-learning",
         "code": true,
         "affiliations": [
+            "University College London",
             "University College London",
             "University College London",
             "University College London",
@@ -12837,6 +13399,8 @@
         "affiliations": [
             "AWS AI Labs",
             "Technical University of Munich",
+            "Carnegie Mellon University",
+            "Visiting Research Scholar",
             "Carnegie Mellon University"
         ]
     },
@@ -12932,7 +13496,8 @@
             "Google Brain",
             "Google Brain",
             "Google Brain",
-            "Google Brain"
+            "Google Brain",
+            "Google AI Residency"
         ]
     },
     {
@@ -12951,9 +13516,7 @@
             "Department of Statistics",
             "University of Oxford",
             "Department of Statistics",
-            "University of Oxford",
-            "OX1",
-            "OX1"
+            "University of Oxford"
         ]
     },
     {
@@ -13005,7 +13568,6 @@
         "affiliations": [
             "Computer Vision Lab",
             "POSTECH",
-            "Computer Vision Lab",
             "Seoul National University"
         ]
     },
@@ -13118,7 +13680,10 @@
     {
         "name": "8387-explicit-disentanglement-of-appearance-and-perspective-in-generative-models",
         "code": true,
-        "affiliations": []
+        "affiliations": [
+            "Cognitive Systems",
+            "Technical University of Denmark"
+        ]
     },
     {
         "name": "8389-learning-to-propagate-for-graph-meta-learning",
@@ -13133,9 +13698,7 @@
     {
         "name": "8388-polynomial-cost-of-adaptation-for-x-armed-bandits",
         "code": false,
-        "affiliations": [
-            "Laboratoire de Math\u00e9matiques dOrsay"
-        ]
+        "affiliations": []
     },
     {
         "name": "8386-a-condition-number-for-joint-optimization-of-cycle-consistent-networks",
@@ -13179,10 +13742,13 @@
         "code": true,
         "affiliations": [
             "INRIA",
+            "DIENS",
             "PSL Research University",
             "INRIA",
+            "DIENS",
             "PSL Research University",
             "INRIA",
+            "DIENS",
             "PSL Research University"
         ]
     },
@@ -13193,6 +13759,8 @@
             "University of Toronto",
             "Triage",
             "University of Toronto",
+            "DeepMind",
+            "DeepMind",
             "University College London",
             "University of Toronto",
             "York University"
@@ -13276,7 +13844,11 @@
         "name": "8373-neurvps-neural-vanishing-point-scanning-via-conic-convolution",
         "code": true,
         "affiliations": [
-            "Standford University"
+            "Standford University",
+            "Berkeley EECS Startup",
+            "Berkeley FHL Vive",
+            "SJTU",
+            "MIT"
         ]
     },
     {
@@ -13296,6 +13868,7 @@
         "affiliations": [
             "Sorbonne Universit\u00e9",
             "CNRS",
+            "LIP",
             "Facebook AI Research",
             "Georgia Institute of Technology"
         ]
@@ -13336,6 +13909,8 @@
             "CSAIL",
             "MIT",
             "MGH",
+            "ITET",
+            "ETH",
             "CSAIL",
             "MIT",
             "CSAIL",
@@ -13364,8 +13939,9 @@
         "name": "8364-network-pruning-via-transformable-architecture-search",
         "code": true,
         "affiliations": [
-            "ReLER , CAI",
+            "CAI",
             "University of Technology Sydney",
+            "Baidu Research",
             "Baidu Research"
         ]
     },
@@ -13389,6 +13965,7 @@
         "name": "8363-selecting-optimal-decisions-via-distributionally-robust-nearest-neighbor-regression",
         "code": true,
         "affiliations": [
+            "of Systems Engineering",
             "Department of Electrical and Computer Engineering",
             "Boston University",
             "of Systems Engineering",
@@ -13404,15 +13981,16 @@
             "Weixin Group",
             "Tencent",
             "Tencent AI Lab",
-            "University of Texas"
+            "University of Texas",
+            "Tencent AI Lab"
         ]
     },
     {
         "name": "8360-multiway-clustering-via-tensor-block-models",
         "code": true,
         "affiliations": [
-            "University of Wisconsin Madison",
-            "University of Wisconsin Madison"
+            "University of Wisconsin",
+            "University of Wisconsin"
         ]
     },
     {
@@ -13455,18 +14033,14 @@
         "code": true,
         "affiliations": [
             "LTCI",
-            "Telecom Paris",
             "Institut Polytechnique de Paris",
             "LTCI",
-            "Telecom Paris",
             "Institut Polytechnique de Paris",
             "ORFE Department",
             "Princeton University",
             "INRIA",
-            "Ecole Normale Superieure",
             "PSL Research University",
             "LTCI",
-            "Telecom Paris",
             "Institut Polytechnique de Paris"
         ]
     },
@@ -13484,7 +14058,8 @@
             "College of Computer Science and Technology",
             "Nanjing University of Aeronautics and Astronautics",
             "MIIT Key Laboratory",
-            "Pattern Analysis and Machine Intelligence"
+            "Pattern Analysis and Machine Intelligence",
+            "PPO"
         ]
     },
     {
@@ -13500,6 +14075,7 @@
         "name": "8349-syscd-a-system-aware-parallel-coordinate-descent-algorithm",
         "code": false,
         "affiliations": [
+            "IBM Research",
             "IBM Research",
             "IBM Research"
         ]
@@ -13528,9 +14104,6 @@
         "name": "8351-rsn-randomized-subspace-newton",
         "code": true,
         "affiliations": [
-            "LTCI",
-            "Telecom Paristech",
-            "IPP",
             "KAUST",
             "MIPT"
         ]
@@ -13550,7 +14123,10 @@
         "affiliations": [
             "Samsung AI Center",
             "Samsung AI Center",
-            "NRU HSE"
+            "NRU HSE",
+            "Samsung",
+            "HSE Laboratory",
+            "National Research University Higher School of Economics"
         ]
     },
     {
@@ -13607,7 +14183,9 @@
             "Tencent AI Lab",
             "Tencent AI Lab",
             "Tencent AI Lab",
-            "Tsinghua University"
+            "Tsinghua University",
+            "Research Intern",
+            "Tencent AI Lab"
         ]
     },
     {
@@ -13697,8 +14275,8 @@
         "code": false,
         "affiliations": [
             "Australian National University",
-            "Data61",
-            "The University of Sydney"
+            "Data6",
+            "University of Sydney"
         ]
     },
     {
@@ -13725,8 +14303,11 @@
         "name": "8331-reducing-noise-in-gan-training-with-variance-reduced-extragradient",
         "code": true,
         "affiliations": [
+            "Mila",
             "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
-            "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne"
+            "Mila",
+            "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+            "Mila"
         ]
     },
     {
@@ -13775,7 +14356,11 @@
         "name": "8327-experience-replay-for-continual-learning",
         "code": true,
         "affiliations": [
-            "University of Pennsylvania"
+            "University of Pennsylvania",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind",
+            "DeepMind"
         ]
     },
     {
@@ -13848,7 +14433,8 @@
             "University of Michigan",
             "Google Research",
             "Google",
-            "Adobe Research"
+            "Adobe Research",
+            "Google"
         ]
     },
     {
@@ -13864,7 +14450,8 @@
         "code": true,
         "affiliations": [
             "Google Research",
-            "Brain Team"
+            "Brain Team",
+            "Google AI Residency Program"
         ]
     },
     {
