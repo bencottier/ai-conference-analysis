@@ -348,3 +348,118 @@ What was Toby after?
 > I can think of one thing. For the recent NeurIPS conference, they asked the authors to submit code with their papers. I've read that 75% of the papers came with code. I would be interested to know more about the 75% and the 25% - especially the affiliations of the authors. This might only be a small extension of existing work behind blogs that people do analysing these conference papers, like the one I just linked, but I'm not sure. Or maybe someone has already done it, and I haven't seen it.
 
 Note: this project has taken about 18 hours so far.
+
+## 2020.03.31
+
+Papers that returned no affiliations
+
+- Trying to get a sense of why, by checking at least a few samples
+    ```
+    ['8314', '8313', '9707', '9671', '9631', '9621', '9625', '9619', '9579', '9513', '9503', '9471', '9470', '9465', '9463', '9438', '9436', '9449', '9427', '9421', '9415', '9413', '9411', '9400', '9391', '9380', '9365', '9357', '9354', '9323', '9309', '9285', '9288', '9269', '9250', '9240', '9242', '9238', '9229', '9190', '9184', '9180', '9181', '9175', '9163', '9129', '9132', '9134', '9117', '9073', '9067', '9068', '9061', '9045', '9025', '9001', '9000', '8981', '8978', '8975', '8894', '8862', '8833', '8827', '8786', '8772', '8728', '8721', '8725', '8707', '8697', '8682', '8675', '8674', '8643', '8628', '8590', '8587', '8576', '8542', '8469', '8464', '8441', '8425', '8387', '8305']
+    ```
+    - 8314: page bottom
+    - 8313: none; email only
+    - 9707: page bottom
+    - 9671: should have detected - UCLA, NYU
+    - 9631: page bottom
+    - 9621: page bottom
+    - 9625: should have detected - DeepMind
+    - 9619: page bottom
+    - 9579: should have detected - DeepMind
+    - 9513: page bottom
+- Ok, so majority are page bottom, a significant amount are false negatives, and sometimes there's nothing there to begin with.
+- When there's nothing, we could process the email address and do a lookup
+- The false negatives may be systematic - DeepMind showed up twice.
+    - Just searched DeepMind in the text data - 25 papers! And we only detected 2. This is a major failure; DeepMind is important.
+- Side note: it seems that OpenAI does not publish at NeurIPS
+- Oh, side note: I don't think we need the `passed_title` condition in postprocessing anymore, because we detect and ignore the title very reliably.
+    - Removed it
+
+- DeepMind failure
+    - Checking 9625
+    - It tags it as `U-PER`
+    - Ok, so if we accept `U-PER`, I expect the false positive rate to go up. But those false positives will tend to be more specific to each paper, so they are unlikely to show up in top-N results of the analysis. Even if they do, a human can just realise what it is and ignore it.
+    - I'm going to run debug on affiliation extraction with `U-PER` passed to get a sense of the detections
+        - 'Shao' F (partial name)
+        - 'LTCI' T
+        - 'CMLA' T
+        - 'Kligler' F (partial name)
+        - 'zhangdinghuai' F (partial email)
+        - 'Ming'
+        - 'LTCI' T
+        - 'Victorenko' F (partial name)
+        - 'Institutskiy' F (partial location)
+        - 'Abadeh' F (partial name)
+        - 'Silva' F (partial name)
+        - 'DeepMind' T
+        - 'yshi' (partial name)
+        - 'Stanford' T (partial institution)
+        - 'Mila' T
+        - 'Deepmind' T
+        - 'Mila' T
+        - 'Mila' T
+        - 'Mila' T
+        - 'ikajic' F (partial email)
+    - Sometimes the partial names are rejected by the author matching, sometimes not
+    - Usually the true positives are all-caps or camel-caps, but not always (e.g. Mila, Deepmind)
+    - Ok, I think the best strategy is:
+        - A hard-coded list: ['Mila', 'Deepmind', ...]
+        - Plus regex: all-caps or camel-caps (where there must be at least one middle cap)
+            - All caps: `'[A-Z][A-Z]+'`
+            - Camel-caps: `'[A-Z]+[a-z]+[A-Z]+'` (doesn't necessarily match full string)
+
+Effect of addressing false negatives
+
+- Seems mostly improved overall
+    - Biggest gains are DeepMind and Mila
+- Some losses
+    - "Technion Israel Institute of Technology2" -> "Israel Institute of Technology2" 2 (9008, 8831)
+    - "Google" 1 (9086)
+        - Tagged as 'O' (other)!
+    - "Brain Team" 1 (9090) (all other cases preserved)
+        - Tagged as 'O' (other)!
+    - "Amazon AI" 1 (9406)
+    - "UT Austin Amazon" -> nothing 1 (9538, 9542)
+        - This is the one I was hoping would be fixed by keeping symbols space-separated, but it ended up returning nothing
+        - Tagged as 'B-PER L-PER' and 'U-LOC'. Fair enough. Amazon is a location, Austin is a name.
+    - 9572 lost 4/5 affiliations
+- Reduced the net number of empty affiliations from 86 to 70
+
+Detecting affiliations at page bottom
+
+- 1413 of 1428 papers end the page with "33rd Conference" etc.
+- 13 (disjoint) are the no-whitespace cases with "33rdConference" etc.
+- The 2 exceptions are probably the ones encoded as images, which are ignored anyway.
+- Ok that's one great signal. What about where to stop, when you go bottom-up?
+- Regex: symbol followed by alphanumeric
+    - `^([^\x00-\x7F]|[0-9])[A-Za-z]+`
+    - Start of line, then either a non-ascii character or a number, then letters
+    - I've seen a pattern more or less like this for 4 files:
+        ```
+        1Department of Engineering, University of Cambridge, Cambridge, UK
+        ∗Contributed during internship in Microsoft Research
+        2Microsoft Research, Cambridge, UK
+        †Now at Google AI, Berlin, Germany (contributed while being with Microsoft Research)
+
+        Correspondence to: Cheng Zhang <Cheng.Zhang@microsoft.com> and Wenbo Gong <wg242@cam.ac.uk>
+
+        33rd Conference on Neural Information Processing Systems (NeurIPS 2019), Vancouver, Canada.
+        ```
+    - How to process?
+        - Enumerate lines
+        - When '33rd Conference' is matched store line index for that
+        - Enumerate lines in reverse from that line
+        - Skip until first match to regex above
+        - Add lines until the regex is not matched, then break
+- Remaining failures
+    - Universities with non-English spelling (model is probably biased towards English), tend to get tagged as person or location
+    - Ideosyncratic cases, e.g. Amazon as location
+        - We should probably just have it as a special exception; it occurs a lot
+    - By including Amazon we are now down to 30 complete failures
+
+Removing trailing numbers from already-tagged entities
+
+- Worked like a charm. The only casualty was Data61, but that is still recogniseable as Data6
+- There are some cases where multiple entities are caught in one, so there is still a trailing number internally. But it's difficult to separate that from the legitimate case of, say, Web3 Foundation, which occurs twice.
+
+
