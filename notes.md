@@ -343,10 +343,6 @@ End results
     - Who is funding the research? Could scrape the acknowledgements section of papers to get information on this.
     - How often do reviewers point out or judge the presence or absence of code in their reviews?
 
-What was Toby after?
-
-> I can think of one thing. For the recent NeurIPS conference, they asked the authors to submit code with their papers. I've read that 75% of the papers came with code. I would be interested to know more about the 75% and the 25% - especially the affiliations of the authors. This might only be a small extension of existing work behind blogs that people do analysing these conference papers, like the one I just linked, but I'm not sure. Or maybe someone has already done it, and I haven't seen it.
-
 Note: this project has taken about 18 hours so far.
 
 ## 2020.03.31
