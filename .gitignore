@@ -1,4 +1,5 @@
 .vscode/
+.ipynb_checkpoints
 
 *.pyc
 *.json
@@ -8,6 +9,11 @@ data/*
 out/*
 !out/neurips_2019
 out/neurips_2019/*
-!out/neurips_2019/code_rankings.txt
-!out/neurips_2019/affiliations.json
 !out/neurips_2019/papers_metadata.json
+!out/neurips_2019/affiliations.json
+!out/neurips_2019/code_rankings.txt
+!out/neurips_2019/code_release_fraction_all.txt
+
+clean_tmp_model_files.sh
+file_probe.py
+notes.md
