@@ -65,14 +65,18 @@ def compute_relative_code_release_frequency(code_freq, no_code_freq, min_count=0
     return rel_freq
 
 
-def rank_code_release_frequency_per_entity(data, top=10, min_count=0, **kwargs):
+def rank_code_release_frequency_per_entity(data, top=10, min_count=0, 
+        print_all=False, **kwargs):
     code_freq, no_code_freq = frequency_per_code_release(data, **kwargs)
     rel_freq = compute_relative_code_release_frequency(code_freq, no_code_freq, min_count)
-    print("\nLowest fraction of papers with code\n")
-    sort_key_low = lambda k: (k[1][0], -k[1][1])
-    print_ranked_freq(rel_freq, top=top, reverse=False, sort_key=sort_key_low)
-    print("\nHighest fraction of papers with code\n")
-    print_ranked_freq(rel_freq, top=top, reverse=True)
+    if print_all:
+        print_ranked_freq(rel_freq, top=len(rel_freq))
+    else:
+        print("\nLowest fraction of papers with code\n")
+        sort_key_low = lambda k: (k[1][0], -k[1][1])
+        print_ranked_freq(rel_freq, top=top, reverse=False, sort_key=sort_key_low)
+        print("\nHighest fraction of papers with code\n")
+        print_ranked_freq(rel_freq, top=top, reverse=True)
 
 
 def rank_pubs_per_code_release(data, top=10, min_count=0, **kwargs):
@@ -86,6 +90,11 @@ def rank_pubs_per_code_release(data, top=10, min_count=0, **kwargs):
 def main(args):
     with open(args.input, 'r') as f:
         data = json.load(f)
+        
+    if args.full:
+        # Full list
+        rank_code_release_frequency_per_entity(data, print_all=True)
+        return
 
     print('======================')
     print('Code release fraction')
@@ -110,6 +119,8 @@ def parse_args():
     parser.add_argument('-i', '--input', type=str, 
                         default='./out/neurips_2019/affiliations.json',
                         help='Path to affiliation JSON data')
+    parser.add_argument('-f', '--full', action='store_true',
+                        help='Report full list of affiliations')
     return parser.parse_args()
 
 
