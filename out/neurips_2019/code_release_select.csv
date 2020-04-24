@@ -1,39 +1,39 @@
 ,code (%),count,keywords,category
 Imperial College London,100,16,imperial,academy
+uber,100,11,uber,industry
 nvidia,100,10,nvidia,industry
 covariant,100,8,covariant,industry
 EPFL,96,24,EPFL,academy
 University of Cambridge,95,20,university of cambridge,academy
 MILA,93,29,mila,academy
-uber,91,11,uber,industry
 Tencent,89,18,Tencent,industry
-University of Oxford,85,41,oxford,academy
+University of Oxford,88,41,oxford,academy
+INRIA,86,36,inria,academy
 Cornell University,84,32,cornell,academy
-INRIA,83,36,inria,academy
 Harvard University,83,24,harvard,academy
 University of Texas at Austin,82,34,"University of Texas at Austin, UAT, UT-Austin, UT Austin",academy
 New York University,81,27,"nyu, New York University",academy
-Tsinghua University,79,34,tsinghua,academy
+Columbia University,79,42,columbia university,academy
+Amazon,79,24,amazon,industry
 Stanford University,78,85,stanford,academy
 Carnegie Mellon University,78,83,"CMU, Carnegie Mellon University",academy
-Columbia University,77,43,columbia university,academy
 Facebook AI Research,77,43,facebook,industry
+Tsinghua University,76,34,tsinghua,academy
+ETH Zurich,76,25,"ETH Zurich, ETHZ, ETH Zürich",academy
 Peking University,76,25,peking university,academy
 RIKEN,76,21,riken,industry
-"University of California, Berkeley",75,57,berkeley,academy
 University of Toronto,75,28,"University of Toronto, uoft",academy
-Amazon,75,24,amazon,industry
+University of Washington,75,28,University of Washington,academy
 Rutgers,75,16,Rutgers,academy
+"University of California, Berkeley",74,58,berkeley,academy
 Massachusetts Institute of Technology,73,86,"mit, massachusetts institute of technology",academy
 University of Southern California,73,22,"University of Southern California, USC",academy
-University of Washington,71,28,University of Washington,academy
 Microsoft Research,70,76,microsoft,industry
 Georgia Institute of Technology,70,30,"georgia tech, gatech, Georgia Institute of Technology",academy
 "University of California, Los Angeles",70,27,"ucla, University of California Los Angeles",academy
 University of Illinois at Urbana-Champaign,68,28,"uiuc, University of Illinois at Urbana",academy
 University of Massachusetts Amherst,67,12,Amherst,academy
-ETH Zurich,65,26,"ETH Zurich, ETHZ, ETH Zürich",academy
 IBM research,61,36,ibm,industry
-"Google, Google Brain, DeepMind",56,170,"google, deepmind",industry
+"Google, Google Brain, DeepMind",59,170,"google, deepmind",industry
 Duke University,55,22,duke,academy
 Princeton University,44,54,princeton,academy

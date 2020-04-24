@@ -656,8 +656,8 @@
         "name": "9678-power-analysis-of-knockoff-filters-for-correlated-designs",
         "code": false,
         "affiliations": [
-            "Leuphana University",
-            "Leuphana"
+            "MIT",
+            "MIT"
         ]
     },
     {
@@ -832,9 +832,9 @@
         "name": "9654-mo-states-mo-problems-emergency-stop-mechanisms-from-observation",
         "code": true,
         "affiliations": [
-            "University of Maryland, College Park",
-            "UMD-CP & UNC-CH",
-            "Intel Labs"
+            "University of Washington",
+            "University of Washington",
+            "Amazon + University of Washington"
         ]
     },
     {
@@ -914,22 +914,20 @@
         "name": "9641-learning-to-optimize-in-swarms",
         "code": true,
         "affiliations": [
-            "University of Technology Sydney",
-            "University of Washington, Seattle",
-            "University of Technology Sydney",
-            "University of Technology Sydney",
-            "University of Technology Sydney"
+            "Texas A&M University",
+            "Texas A&M University",
+            "TAMU",
+            "Texas A&M University"
         ]
     },
     {
         "name": "9646-beyond-the-single-neuron-convex-barrier-for-neural-network-certification",
         "code": true,
         "affiliations": [
-            "Microsoft Research AI",
-            "Microsoft Research",
-            "UCLA",
-            "UCLA",
-            "Microsoft Research"
+            "ETH Zurich",
+            "ETH Zurich",
+            "ETH Zurich",
+            "DeepCode and ETH Zurich, Switzerland"
         ]
     },
     {
@@ -989,8 +987,10 @@
         "name": "9635-the-step-decay-schedule-a-near-optimal-geometrically-decaying-learning-rate-procedure-for-least-squares",
         "code": false,
         "affiliations": [
-            "Purdue University",
-            "Purdue"
+            "Duke University",
+            "University of Washington",
+            "University of Washington",
+            "Microsoft Research"
         ]
     },
     {
@@ -1347,12 +1347,12 @@
         "name": "9603-on-the-fairness-of-disentangled-representations",
         "code": true,
         "affiliations": [
-            "Data61, CSIRO",
-            "McMaster University",
-            "University of Chicago",
-            "Data61, the Australian National University and the University of Sydney",
-            "Max Planck Institute for Biological Cybernetics",
-            "Data61 and ANU"
+            "ETH Z\u00fcrich - MPI T\u00fcbingen",
+            "University of Oxford",
+            "University of Oxford",
+            "MPI for Intelligent Systems",
+            "MPI for Intelligent Systems",
+            "Google Brain"
         ]
     },
     {
@@ -2440,9 +2440,9 @@
         "name": "9493-global-convergence-of-gradient-descent-for-deep-linear-residual-networks",
         "code": false,
         "affiliations": [
-            "University of Toronto",
-            "DeepMind",
-            "University of Toronto"
+            "Princeton University",
+            "PACM, Princeton University",
+            "Princeton University"
         ]
     },
     {
@@ -4475,12 +4475,9 @@
         "name": "9289-data-parameters-a-new-family-of-parameters-for-learning-a-differentiable-curriculum",
         "code": true,
         "affiliations": [
-            "National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences",
-            "Institute of Automation,Chinese  Academy of Science",
-            "Intel Labs China",
-            "Institute of Automation, Chinese Academy of Sciences",
-            "Chinese Academy of Sciences, China",
-            "Institute of Automation, Chinese Academy of Sciences"
+            "Apple",
+            "Apple",
+            "Apple"
         ]
     },
     {
@@ -5548,11 +5545,8 @@
         "name": "9179-on-the-value-of-target-data-in-transfer-learning",
         "code": false,
         "affiliations": [
-            "Peking University",
-            "University of Sydney",
-            "Peking University",
-            "Peking University",
-            "University of Sydney"
+            "Toyota Technological Institute at Chicago",
+            "Columbia University"
         ]
     },
     {
@@ -6003,10 +5997,10 @@
         "name": "9127-deep-generative-video-compression",
         "code": false,
         "affiliations": [
-            "Corti",
-            "Unumed",
-            "DTU",
-            "Technical University of Denmark"
+            "Disney Research",
+            "Dartmouth College",
+            "Disney Research",
+            "Disney Research"
         ]
     },
     {
@@ -6144,11 +6138,13 @@
         "name": "9117-a-meta-analysis-of-overfitting-in-machine-learning",
         "code": false,
         "affiliations": [
-            "University of Technology Sydney",
-            "University of Washington, Seattle",
-            "University of Technology Sydney",
-            "University of Technology Sydney",
-            "University of Technology Sydney"
+            "University of California, Berkeley",
+            "UC Berkeley",
+            "UC Berkeley",
+            "University of California, Berkeley",
+            "University of California, Berkeley",
+            "University of California, Berkeley",
+            "UC Berkeley"
         ]
     },
     {
@@ -6758,9 +6754,10 @@
         "name": "9057-energy-inspired-models-learning-with-sampler-induced-distributions",
         "code": true,
         "affiliations": [
-            "The Alan Turing Institute/ The University of Surrey",
-            "University of Surrey",
-            "University of Bath"
+            "Stanford University",
+            "Google Brain",
+            "Google Brain",
+            "New York University"
         ]
     },
     {
@@ -8604,9 +8601,7 @@
         "name": "8863-copula-multi-label-learning",
         "code": false,
         "affiliations": [
-            "University College London",
-            "UCL",
-            "UCL"
+            "Wuhan University"
         ]
     },
     {
@@ -9457,8 +9452,12 @@
         "name": "8783-off-policy-evaluation-via-off-policy-classification",
         "code": true,
         "affiliations": [
-            "Cornell University",
-            "Cornell University"
+            "Google Brain",
+            "Google",
+            "DeepMind",
+            "Google",
+            "Google Inc.",
+            "Google"
         ]
     },
     {
@@ -10508,9 +10507,11 @@
         "name": "8676-embedding-symbolic-knowledge-into-deep-networks",
         "code": true,
         "affiliations": [
-            "University of Southampton",
-            "University of Southampton",
-            "apb@ecs.soton.ac.uk"
+            "National University of Singapore",
+            "National University of Singapore",
+            "National University of Singapore",
+            "National University of Singapore,",
+            "National University of Singapore (NUS)"
         ]
     },
     {
@@ -10747,8 +10748,10 @@
         "name": "8651-handling-correlated-and-repeated-measurements-with-the-smoothed-multivariate-square-root-lasso",
         "code": true,
         "affiliations": [
-            "University of Edinburgh",
-            "University of Edinburgh"
+            "INRIA",
+            "Inria",
+            "INRIA",
+            "Universit\u00e9 de Montpellier"
         ]
     },
     {
@@ -11070,8 +11073,10 @@
         "name": "8620-lca-loss-change-allocation-for-neural-network-training",
         "code": true,
         "affiliations": [
-            "Stanford University",
-            "New York University"
+            "Uber AI Labs",
+            "Uber AI Labs",
+            "Uber",
+            "Uber AI Labs"
         ]
     },
     {
@@ -11564,10 +11569,9 @@
         "name": "8568-putting-an-end-to-end-to-end-gradient-isolated-learning-of-representations",
         "code": true,
         "affiliations": [
-            "Harvard University",
-            "University of Southern California",
-            "University of Southern California",
-            "USC"
+            "University of Amsterdam",
+            "University of Amsterdam",
+            "AMLab - University of Amsterdam"
         ]
     },
     {
@@ -13291,8 +13295,8 @@
         "name": "8395-deep-supervised-summarization-algorithm-and-application-to-learning-instructions",
         "code": true,
         "affiliations": [
-            "Hasso-Plattner-Institut",
-            "Hasso Plattner Institute"
+            "Northeastern University",
+            "Northeastern University"
         ]
     },
     {
@@ -13577,8 +13581,7 @@
         "name": "8361-regret-minimization-for-reinforcement-learning-with-vectorial-feedback-and-complex-objectives",
         "code": true,
         "affiliations": [
-            "Tsinghua University",
-            "Tsinghua University"
+            "Department of Industrial Systems Engineering and Management, National University of Singapore"
         ]
     },
     {
@@ -13632,12 +13635,9 @@
         "name": "8359-saccader-improving-accuracy-of-hard-attention-models-for-vision",
         "code": true,
         "affiliations": [
-            "Google",
+            "Google Research, Brain Team",
             "Google Brain",
-            "Google Brain",
-            "Google",
-            "Google",
-            "Google Research"
+            "Google"
         ]
     },
     {
@@ -14036,14 +14036,17 @@
         "name": "8305-gpipe-efficient-training-of-giant-neural-networks-using-pipeline-parallelism",
         "code": true,
         "affiliations": [
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras Systems",
-            "Cerebras"
+            "Google Brain",
+            "Google",
+            "Google",
+            "Google",
+            "Google",
+            "Google Brain",
+            "Google",
+            "Google Brain",
+            "Google",
+            "Google",
+            "Google Brain"
         ]
     },
     {
