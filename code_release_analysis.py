@@ -105,7 +105,7 @@ def main(args):
     print('============')
     rank_code_release_frequency_per_entity(data, top=20, min_count=1)
 
-    print('\nWords')
+    print('\nWords (#papers >= 5)')
     print('=====')
     rank_code_release_frequency_per_entity(data, top=20, min_count=5, words=True)
 
