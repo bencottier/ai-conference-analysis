@@ -6,6 +6,11 @@
 *.bkp
 
 data/*
+!data/neurips_2019
+data/neurips_2019/*
+!data/neurips_2019/meta
+data/neurips_2019/meta/*
+!data/neurips_2019/meta/raw_data_090819_edit.txt
 out/*
 !out/neurips_2019
 out/neurips_2019/*
