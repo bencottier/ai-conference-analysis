@@ -14,6 +14,7 @@ out/neurips_2019/*
 !out/neurips_2019/code_rankings.txt
 !out/neurips_2019/code_release_fraction_all.txt
 !out/neurips_2019/code_release_select.csv
+!out/neurips_2019/papers_with_code.png
 
 clean_tmp_model_files.sh
 file_probe.py

@@ -1,3 +1,5 @@
+![Sample: papers with code, by author affiliation](out/neurips_2019/papers_with_code.png)
+
 # AI conference analysis
 
 This repository is for analysing code release trends from NeurIPS 2019.
@@ -21,19 +23,6 @@ Multiple methods of extracting affiliations have been tried.
 The main results are in `out/neurips_2019/`. The `code_rankings.txt` file summarises code release with a few different ranked lists, and `code_release_fraction_all.txt` lists the code release fraction and number of papers for every institution identified.
 
 The `affiliations_direct.ipynb` notebook uses the current default data source and method of extracting author affiliations for each paper. It ends with some code release analysis for a select set of institutions.
-
-Sample: code release fraction for biggest publishers (does not account for institution aliases)
-
-1. Stanford University (0.78, 79)
-2. Carnegie Mellon University (0.76, 76)
-3. Microsoft Research (0.69, 65)
-4. MIT (0.76, 63)
-5. Google (0.59, 61)
-6. UC Berkeley (0.78, 50)
-7. Google Brain (0.66, 47)
-8. Columbia University (0.8, 41)
-9. DeepMind (0.45, 40)
-10. Stanford (0.69, 39)
 
 ### Caveats
 
